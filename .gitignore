@@ -4,5 +4,5 @@ __pycache__/
 *.bin
 data/raw/*
 !data/raw/.gitkeep
-!data/raw/codexglue/
+!data/raw/codexglue_SYNTHETIC_PLACEHOLDER/
 venv/
