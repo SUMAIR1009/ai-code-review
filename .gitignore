@@ -2,4 +2,7 @@ env/
 __pycache__/
 *.pt
 *.bin
-data/raw/
+data/raw/*
+!data/raw/.gitkeep
+!data/raw/README.md
+venv/
