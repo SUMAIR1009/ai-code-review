@@ -2,5 +2,6 @@ env/
 __pycache__/
 *.pt
 *.bin
-data/raw/
+data/raw/*
+!data/raw/.gitkeep
 venv/
