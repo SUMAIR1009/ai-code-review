@@ -2,4 +2,5 @@ env/
 __pycache__/
 *.pt
 *.bin
-data/raw/venv/
+data/raw/
+venv/
