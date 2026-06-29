@@ -1,0 +1,39 @@
+============================================================
+CodeXGLUE Defect Detection (Devign) - EDA Summary
+COM748 MSc Project - Muhammad Sumair (20098428)
+============================================================
+
+--- SAMPLE COUNTS ---
+  Train:      21,854
+  Validation: 2,732
+  Test:       2,732
+  TOTAL:      27,318
+
+--- CLASS DISTRIBUTION (TRAIN) ---
+  Clean (target=0): 11,836  (54.2%)
+  Buggy (target=1): 10,018  (45.8%)
+  Imbalance ratio (clean:buggy): 1.18 : 1
+
+--- CLASS DISTRIBUTION (OVERALL) ---
+  Clean (target=0): 14,858  (54.4%)
+  Buggy (target=1): 12,460  (45.6%)
+  Imbalance ratio (clean:buggy): 1.19 : 1
+
+--- CODE LENGTH (characters) ---
+  Average:  2024
+  Median:   937
+  Shortest: 26
+  Longest:  142,346
+
+--- CODE LENGTH (lines) ---
+  Average:  113.0
+  Median:   58
+  Longest:  8,131
+
+--- TOKENISATION NOTE ---
+  ~27.2% of functions exceed 2,000 chars (long functions
+  likely to hit CodeBERT's 512-token truncation limit).
+
+--- DUPLICATE CHECK ---
+  Exact-duplicate functions across full dataset: 60
+
