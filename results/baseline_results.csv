@@ -1,0 +1,2 @@
+model,precision,recall,f1,accuracy,sample_size,rule
+Cppcheck (static analysis),0.615,0.160,0.254,0.530,200,error OR warning => buggy

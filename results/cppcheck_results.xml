@@ -1,0 +1,1685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.21.0"/>
+    <errors>
+        <error id="normalCheckLevelMaxBranches" severity="information" msg="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." verbose="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." file0="sonar_samples/func_0000.c">
+            <location file="sonar_samples/func_0000.c" line="0" column="0"/>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;bs&apos; can be declared as pointer to const" verbose="Parameter &apos;bs&apos; can be declared as pointer to const" cwe="398" file0="sonar_samples/func_0001.c">
+            <location file="sonar_samples/func_0001.c" line="1" column="41" info="Parameter &apos;bs&apos; can be declared as pointer to const"/>
+            <symbol>bs</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="sonar_samples/func_0004.c">
+            <location file="sonar_samples/func_0004.c" line="205" column="41"/>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;optctx&apos; can be declared as pointer to const" verbose="Parameter &apos;optctx&apos; can be declared as pointer to const" cwe="398" file0="sonar_samples/func_0005.c">
+            <location file="sonar_samples/func_0005.c" line="1" column="24" info="Parameter &apos;optctx&apos; can be declared as pointer to const"/>
+            <symbol>optctx</symbol>
+        </error>
+        <error id="normalCheckLevelMaxBranches" severity="information" msg="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." verbose="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." file0="sonar_samples/func_0006.c">
+            <location file="sonar_samples/func_0006.c" line="0" column="0"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;ref&apos; can be reduced." verbose="The scope of the variable &apos;ref&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0006.c">
+            <location file="sonar_samples/func_0006.c" line="251" column="22"/>
+            <symbol>ref</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;mx&apos; can be reduced." verbose="The scope of the variable &apos;mx&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0006.c">
+            <location file="sonar_samples/func_0006.c" line="327" column="21"/>
+            <symbol>mx</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;my&apos; can be reduced." verbose="The scope of the variable &apos;my&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0006.c">
+            <location file="sonar_samples/func_0006.c" line="327" column="25"/>
+            <symbol>my</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;dxy&apos; can be reduced." verbose="The scope of the variable &apos;dxy&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0006.c">
+            <location file="sonar_samples/func_0006.c" line="327" column="45"/>
+            <symbol>dxy</symbol>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;src_plane&apos; can be declared as pointer to const" verbose="Parameter &apos;src_plane&apos; can be declared as pointer to const" cwe="398" file0="sonar_samples/func_0006.c">
+            <location file="sonar_samples/func_0006.c" line="3" column="45" info="Parameter &apos;src_plane&apos; can be declared as pointer to const"/>
+            <symbol>src_plane</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;ret&apos; is assigned a value that is never used." verbose="Variable &apos;ret&apos; is assigned a value that is never used." cwe="563" file0="sonar_samples/func_0007.c">
+            <location file="sonar_samples/func_0007.c" line="101" column="13"/>
+            <symbol>ret</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;ret&apos; is assigned a value that is never used." verbose="Variable &apos;ret&apos; is assigned a value that is never used." cwe="563" file0="sonar_samples/func_0007.c">
+            <location file="sonar_samples/func_0007.c" line="107" column="13"/>
+            <symbol>ret</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;ret&apos; is assigned a value that is never used." verbose="Variable &apos;ret&apos; is assigned a value that is never used." cwe="563" file0="sonar_samples/func_0007.c">
+            <location file="sonar_samples/func_0007.c" line="113" column="13"/>
+            <symbol>ret</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;ret&apos; is assigned a value that is never used." verbose="Variable &apos;ret&apos; is assigned a value that is never used." cwe="563" file0="sonar_samples/func_0007.c">
+            <location file="sonar_samples/func_0007.c" line="119" column="13"/>
+            <symbol>ret</symbol>
+        </error>
+        <error id="normalCheckLevelMaxBranches" severity="information" msg="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." verbose="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." file0="sonar_samples/func_0008.c">
+            <location file="sonar_samples/func_0008.c" line="0" column="0"/>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;ds&apos; can be declared as pointer to const" verbose="Parameter &apos;ds&apos; can be declared as pointer to const" cwe="398" file0="sonar_samples/func_0009.c">
+            <location file="sonar_samples/func_0009.c" line="1" column="40" info="Parameter &apos;ds&apos; can be declared as pointer to const"/>
+            <symbol>ds</symbol>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;opts&apos; can be declared as pointer to const" verbose="Parameter &apos;opts&apos; can be declared as pointer to const" cwe="398" file0="sonar_samples/func_0011.c">
+            <location file="sonar_samples/func_0011.c" line="1" column="60" info="Parameter &apos;opts&apos; can be declared as pointer to const"/>
+            <symbol>opts</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;chunk_size&apos; can be reduced." verbose="The scope of the variable &apos;chunk_size&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0015.c">
+            <location file="sonar_samples/func_0015.c" line="19" column="18"/>
+            <symbol>chunk_size</symbol>
+        </error>
+        <error id="normalCheckLevelMaxBranches" severity="information" msg="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." verbose="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." file0="sonar_samples/func_0016.c">
+            <location file="sonar_samples/func_0016.c" line="0" column="0"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;chainofs&apos; can be reduced." verbose="The scope of the variable &apos;chainofs&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0016.c">
+            <location file="sonar_samples/func_0016.c" line="17" column="18"/>
+            <symbol>chainofs</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;chainlen&apos; can be reduced." verbose="The scope of the variable &apos;chainlen&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0016.c">
+            <location file="sonar_samples/func_0016.c" line="19" column="18"/>
+            <symbol>chainlen</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;tag&apos; can be reduced." verbose="The scope of the variable &apos;tag&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0016.c">
+            <location file="sonar_samples/func_0016.c" line="23" column="19"/>
+            <symbol>tag</symbol>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;d_end&apos; can be declared as pointer to const" verbose="Variable &apos;d_end&apos; can be declared as pointer to const" cwe="398" file0="sonar_samples/func_0016.c">
+            <location file="sonar_samples/func_0016.c" line="9" column="20" info="Variable &apos;d_end&apos; can be declared as pointer to const"/>
+            <symbol>d_end</symbol>
+        </error>
+        <error id="comparisonError" severity="style" msg="Expression &apos;(X &amp; 0x4) == 0x1&apos; is always false." verbose="The expression &apos;(X &amp; 0x4) == 0x1&apos; is always false. Check carefully constants and operators used, these errors might be hard to spot sometimes. In case of complex expression it might help to split it to separate expressions." cwe="398" file0="sonar_samples/func_0018.c">
+            <location file="sonar_samples/func_0018.c" line="73" column="28"/>
+        </error>
+        <error id="normalCheckLevelMaxBranches" severity="information" msg="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." verbose="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." file0="sonar_samples/func_0019.c">
+            <location file="sonar_samples/func_0019.c" line="0" column="0"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: status" verbose="Uninitialized variable: status" cwe="457" file0="sonar_samples/func_0021.c">
+            <location file="sonar_samples/func_0021.c" line="13" column="9"/>
+            <symbol>status</symbol>
+        </error>
+        <error id="normalCheckLevelMaxBranches" severity="information" msg="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." verbose="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." file0="sonar_samples/func_0021.c">
+            <location file="sonar_samples/func_0021.c" line="0" column="0"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="sonar_samples/func_0022.c">
+            <location file="sonar_samples/func_0022.c" line="81" column="44"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If RENAME is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If RENAME is a macro then please configure it." file0="sonar_samples/func_0023.c">
+            <location file="sonar_samples/func_0023.c" line="1" column="20"/>
+        </error>
+        <error id="normalCheckLevelMaxBranches" severity="information" msg="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." verbose="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." file0="sonar_samples/func_0029.c">
+            <location file="sonar_samples/func_0029.c" line="0" column="0"/>
+        </error>
+        <error id="normalCheckLevelMaxBranches" severity="information" msg="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." verbose="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." file0="sonar_samples/func_0032.c">
+            <location file="sonar_samples/func_0032.c" line="0" column="0"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;right_cbp&apos; can be reduced." verbose="The scope of the variable &apos;right_cbp&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0032.c">
+            <location file="sonar_samples/func_0032.c" line="9" column="58"/>
+            <symbol>right_cbp</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;block_is_intra&apos; can be reduced." verbose="The scope of the variable &apos;block_is_intra&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0032.c">
+            <location file="sonar_samples/func_0032.c" line="13" column="9"/>
+            <symbol>block_is_intra</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;right_is_intra&apos; can be reduced." verbose="The scope of the variable &apos;right_is_intra&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0032.c">
+            <location file="sonar_samples/func_0032.c" line="13" column="58"/>
+            <symbol>right_is_intra</symbol>
+        </error>
+        <error id="normalCheckLevelMaxBranches" severity="information" msg="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." verbose="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." file0="sonar_samples/func_0033.c">
+            <location file="sonar_samples/func_0033.c" line="0" column="0"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;strcmp(access,&quot;RW&quot;)&apos; is always false" verbose="Condition &apos;strcmp(access,&quot;RW&quot;)&apos; is always false" cwe="570" file0="sonar_samples/func_0033.c">
+            <location file="sonar_samples/func_0033.c" line="93" column="20" info="Condition &apos;strcmp(access,&quot;RW&quot;)&apos; is always false"/>
+            <location file="sonar_samples/func_0033.c" line="49" column="30" info="Assuming that condition &apos;strcmp(access,&quot;RW&quot;)&apos; is not redundant"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="sonar_samples/func_0034.c">
+            <location file="sonar_samples/func_0034.c" line="54" column="12"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;k&apos; can be reduced." verbose="The scope of the variable &apos;k&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0037.c">
+            <location file="sonar_samples/func_0037.c" line="9" column="9"/>
+            <symbol>k</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="sonar_samples/func_0041.c">
+            <location file="sonar_samples/func_0041.c" line="21" column="24"/>
+        </error>
+        <error id="returnImplicitInt" severity="portability" msg="Omitted return type of function &apos;qemu_co_sendv_recvv&apos; defaults to int, this is not supported by ISO C99 and later standards." verbose="Omitted return type of function &apos;qemu_co_sendv_recvv&apos; defaults to int, this is not supported by ISO C99 and later standards." file0="sonar_samples/func_0042.c">
+            <location file="sonar_samples/func_0042.c" line="1" column="1"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;ret==0&apos; is always true" verbose="Condition &apos;ret==0&apos; is always true" cwe="571" file0="sonar_samples/func_0042.c">
+            <location file="sonar_samples/func_0042.c" line="37" column="24" info="Condition &apos;ret==0&apos; is always true"/>
+            <location file="sonar_samples/func_0042.c" line="17" column="17" info="Assuming that condition &apos;ret&gt;0&apos; is not redundant"/>
+            <location file="sonar_samples/func_0042.c" line="21" column="24" info="Assuming that condition &apos;ret&lt;0&apos; is not redundant"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;ret&apos; can be reduced." verbose="The scope of the variable &apos;ret&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0042.c">
+            <location file="sonar_samples/func_0042.c" line="9" column="13"/>
+            <symbol>ret</symbol>
+        </error>
+        <error id="normalCheckLevelMaxBranches" severity="information" msg="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." verbose="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." file0="sonar_samples/func_0048.c">
+            <location file="sonar_samples/func_0048.c" line="0" column="0"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If TARGET_FMT_plx is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If TARGET_FMT_plx is a macro then please configure it." file0="sonar_samples/func_0049.c">
+            <location file="sonar_samples/func_0049.c" line="11" column="40"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;i&apos; can be reduced." verbose="The scope of the variable &apos;i&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0052.c">
+            <location file="sonar_samples/func_0052.c" line="6" column="16"/>
+            <symbol>i</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;VCO_out&apos; is assigned a value that is never used." verbose="Variable &apos;VCO_out&apos; is assigned a value that is never used." cwe="563" file0="sonar_samples/func_0059.c">
+            <location file="sonar_samples/func_0059.c" line="15" column="13"/>
+            <symbol>VCO_out</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="failed to evaluate #if condition, undefined function-like macro invocation: GTK_CHECK_VERSION( ... )" verbose="failed to evaluate #if condition, undefined function-like macro invocation: GTK_CHECK_VERSION( ... )">
+            <location file="sonar_samples/func_0060.c" line="113" column="2"/>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;env&apos; can be declared as pointer to const" verbose="Variable &apos;env&apos; can be declared as pointer to const" cwe="398" file0="sonar_samples/func_0063.c">
+            <location file="sonar_samples/func_0063.c" line="5" column="15" info="Variable &apos;env&apos; can be declared as pointer to const"/>
+            <symbol>env</symbol>
+        </error>
+        <error id="normalCheckLevelMaxBranches" severity="information" msg="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." verbose="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." file0="sonar_samples/func_0067.c">
+            <location file="sonar_samples/func_0067.c" line="0" column="0"/>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;avctx&apos; can be declared as pointer to const" verbose="Parameter &apos;avctx&apos; can be declared as pointer to const" cwe="398" file0="sonar_samples/func_0070.c">
+            <location file="sonar_samples/func_0070.c" line="1" column="55" info="Parameter &apos;avctx&apos; can be declared as pointer to const"/>
+            <symbol>avctx</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If RENAME is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If RENAME is a macro then please configure it." file0="sonar_samples/func_0071.c">
+            <location file="sonar_samples/func_0071.c" line="1" column="20"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;j&apos; can be reduced." verbose="The scope of the variable &apos;j&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0073.c">
+            <location file="sonar_samples/func_0073.c" line="5" column="12"/>
+            <symbol>j</symbol>
+        </error>
+        <error id="normalCheckLevelMaxBranches" severity="information" msg="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." verbose="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." file0="sonar_samples/func_0074.c">
+            <location file="sonar_samples/func_0074.c" line="0" column="0"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;rowcount&apos; can be reduced." verbose="The scope of the variable &apos;rowcount&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0074.c">
+            <location file="sonar_samples/func_0074.c" line="33" column="14"/>
+            <symbol>rowcount</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;inti&apos; can be reduced." verbose="The scope of the variable &apos;inti&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0074.c">
+            <location file="sonar_samples/func_0074.c" line="37" column="9"/>
+            <symbol>inti</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;intj&apos; can be reduced." verbose="The scope of the variable &apos;intj&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0074.c">
+            <location file="sonar_samples/func_0074.c" line="37" column="15"/>
+            <symbol>intj</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;a&apos; can be reduced." verbose="The scope of the variable &apos;a&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0074.c">
+            <location file="sonar_samples/func_0074.c" line="47" column="49"/>
+            <symbol>a</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;b&apos; can be reduced." verbose="The scope of the variable &apos;b&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0074.c">
+            <location file="sonar_samples/func_0074.c" line="47" column="52"/>
+            <symbol>b</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;blocksum&apos; can be reduced." verbose="The scope of the variable &apos;blocksum&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0074.c">
+            <location file="sonar_samples/func_0074.c" line="53" column="14"/>
+            <symbol>blocksum</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;blocksize&apos; can be reduced." verbose="The scope of the variable &apos;blocksize&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0074.c">
+            <location file="sonar_samples/func_0074.c" line="55" column="9"/>
+            <symbol>blocksize</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;th&apos; can be reduced." verbose="The scope of the variable &apos;th&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0074.c">
+            <location file="sonar_samples/func_0074.c" line="57" column="13"/>
+            <symbol>th</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;sum&apos; can be reduced." verbose="The scope of the variable &apos;sum&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0074.c">
+            <location file="sonar_samples/func_0074.c" line="59" column="13"/>
+            <symbol>sum</symbol>
+        </error>
+        <error id="zerodiv" severity="error" msg="Division by zero." verbose="Division by zero." cwe="369" file0="sonar_samples/func_0074.c">
+            <location file="sonar_samples/func_0074.c" line="249" column="28" info="Division by zero"/>
+            <location file="sonar_samples/func_0074.c" line="241" column="27" info="Assuming condition is false"/>
+            <location file="sonar_samples/func_0074.c" line="239" column="25" info="Assignment &apos;blocksize=0&apos;, assigned value is 0"/>
+        </error>
+        <error id="zerodiv" severity="error" msg="Division by zero." verbose="Division by zero." cwe="369" file0="sonar_samples/func_0074.c">
+            <location file="sonar_samples/func_0074.c" line="269" column="33" info="Division by zero"/>
+            <location file="sonar_samples/func_0074.c" line="261" column="26" info="Assuming condition is false"/>
+            <location file="sonar_samples/func_0074.c" line="259" column="29" info="Assignment &apos;blocksize=0&apos;, assigned value is 0"/>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: conflist" verbose="Uninitialized variable: conflist" cwe="457" file0="sonar_samples/func_0074.c">
+            <location file="sonar_samples/func_0074.c" line="339" column="11"/>
+            <location file="sonar_samples/func_0074.c" line="211" column="19" info="Assuming condition is false"/>
+            <symbol>conflist</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="sonar_samples/func_0076.c">
+            <location file="sonar_samples/func_0076.c" line="121" column="12"/>
+        </error>
+        <error id="arrayIndexOutOfBoundsCond" severity="warning" msg="Either the condition &apos;(coding_method[ch][sb][j]-8)&gt;22&apos; is redundant or the array &apos;switchtable[23]&apos; is accessed at index 30, which is out of bounds." verbose="Either the condition &apos;(coding_method[ch][sb][j]-8)&gt;22&apos; is redundant or the array &apos;switchtable[23]&apos; is accessed at index 30, which is out of bounds." cwe="788" file0="sonar_samples/func_0077.c">
+            <location file="sonar_samples/func_0077.c" line="27" column="36" info="Array index out of bounds"/>
+            <location file="sonar_samples/func_0077.c" line="19" column="47" info="Assuming that condition &apos;(coding_method[ch][sb][j]-8)&gt;22&apos; is not redundant"/>
+        </error>
+        <error id="constVariable" severity="style" msg="Variable &apos;switchtable&apos; can be declared as const array" verbose="Variable &apos;switchtable&apos; can be declared as const array" cwe="398" file0="sonar_samples/func_0077.c">
+            <location file="sonar_samples/func_0077.c" line="11" column="9" info="Variable &apos;switchtable&apos; can be declared as const array"/>
+            <symbol>switchtable</symbol>
+        </error>
+        <error id="arithOperationsOnVoidPointer" severity="portability" msg="&apos;buffer&apos; is of type &apos;void *&apos;. When using void pointers in calculations, the behaviour is undefined." verbose="&apos;buffer&apos; is of type &apos;void *&apos;. When using void pointers in calculations, the behaviour is undefined. Arithmetic operations on &apos;void *&apos; is a GNU C extension, which defines the &apos;sizeof(void)&apos; to be 1." cwe="467" file0="sonar_samples/func_0080.c">
+            <location file="sonar_samples/func_0080.c" line="191" column="23"/>
+            <symbol>buffer</symbol>
+        </error>
+        <error id="arithOperationsOnVoidPointer" severity="portability" msg="&apos;buffer&apos; is of type &apos;void *&apos;. When using void pointers in calculations, the behaviour is undefined." verbose="&apos;buffer&apos; is of type &apos;void *&apos;. When using void pointers in calculations, the behaviour is undefined. Arithmetic operations on &apos;void *&apos; is a GNU C extension, which defines the &apos;sizeof(void)&apos; to be 1." cwe="467" file0="sonar_samples/func_0080.c">
+            <location file="sonar_samples/func_0080.c" line="193" column="26"/>
+            <symbol>buffer</symbol>
+        </error>
+        <error id="arithOperationsOnVoidPointer" severity="portability" msg="&apos;merged_sector&apos; is of type &apos;void *&apos;. When using void pointers in calculations, the behaviour is undefined." verbose="&apos;merged_sector&apos; is of type &apos;void *&apos;. When using void pointers in calculations, the behaviour is undefined. Arithmetic operations on &apos;void *&apos; is a GNU C extension, which defines the &apos;sizeof(void)&apos; to be 1." cwe="467" file0="sonar_samples/func_0080.c">
+            <location file="sonar_samples/func_0080.c" line="233" column="34"/>
+            <symbol>merged_sector</symbol>
+        </error>
+        <error id="arithOperationsOnVoidPointer" severity="portability" msg="&apos;merged_sector&apos; is of type &apos;void *&apos;. When using void pointers in calculations, the behaviour is undefined." verbose="&apos;merged_sector&apos; is of type &apos;void *&apos;. When using void pointers in calculations, the behaviour is undefined. Arithmetic operations on &apos;void *&apos; is a GNU C extension, which defines the &apos;sizeof(void)&apos; to be 1." cwe="467" file0="sonar_samples/func_0080.c">
+            <location file="sonar_samples/func_0080.c" line="247" column="43"/>
+            <symbol>merged_sector</symbol>
+        </error>
+        <error id="arithOperationsOnVoidPointer" severity="portability" msg="&apos;data_tmp&apos; is of type &apos;void *&apos;. When using void pointers in calculations, the behaviour is undefined." verbose="&apos;data_tmp&apos; is of type &apos;void *&apos;. When using void pointers in calculations, the behaviour is undefined. Arithmetic operations on &apos;void *&apos; is a GNU C extension, which defines the &apos;sizeof(void)&apos; to be 1." cwe="467" file0="sonar_samples/func_0080.c">
+            <location file="sonar_samples/func_0080.c" line="285" column="18"/>
+            <symbol>data_tmp</symbol>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;bus&apos; can be declared as pointer to const" verbose="Parameter &apos;bus&apos; can be declared as pointer to const" cwe="398" file0="sonar_samples/func_0081.c">
+            <location file="sonar_samples/func_0081.c" line="1" column="44" info="Parameter &apos;bus&apos; can be declared as pointer to const"/>
+            <symbol>bus</symbol>
+        </error>
+        <error id="shiftTooManyBitsSigned" severity="error" msg="Shifting signed 32-bit value by 31 bits is undefined behaviour" verbose="Shifting signed 32-bit value by 31 bits is undefined behaviour" cwe="758" file0="sonar_samples/func_0081.c">
+            <location file="sonar_samples/func_0081.c" line="5" column="20" info="Shift"/>
+        </error>
+        <error id="normalCheckLevelMaxBranches" severity="information" msg="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." verbose="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." file0="sonar_samples/func_0082.c">
+            <location file="sonar_samples/func_0082.c" line="0" column="0"/>
+        </error>
+        <error id="unsignedLessThanZero" severity="style" msg="Checking if unsigned expression &apos;reftable_offset&apos; is less than zero." verbose="The unsigned expression &apos;reftable_offset&apos; will never be negative so it is either pointless or an error to check if it is." cwe="570" file0="sonar_samples/func_0084.c">
+            <location file="sonar_samples/func_0084.c" line="143" column="29" info="Unsigned less than zero"/>
+            <symbol>reftable_offset</symbol>
+        </error>
+        <error id="unsignedLessThanZero" severity="style" msg="Checking if unsigned expression &apos;reftable_offset&apos; is less than zero." verbose="The unsigned expression &apos;reftable_offset&apos; will never be negative so it is either pointless or an error to check if it is." cwe="570" file0="sonar_samples/func_0084.c">
+            <location file="sonar_samples/func_0084.c" line="157" column="33" info="Unsigned less than zero"/>
+            <symbol>reftable_offset</symbol>
+        </error>
+        <error id="unsignedLessThanZero" severity="style" msg="Checking if unsigned expression &apos;reftable_offset&apos; is less than zero." verbose="The unsigned expression &apos;reftable_offset&apos; will never be negative so it is either pointless or an error to check if it is." cwe="570" file0="sonar_samples/func_0084.c">
+            <location file="sonar_samples/func_0084.c" line="221" column="25" info="Unsigned less than zero"/>
+            <symbol>reftable_offset</symbol>
+        </error>
+        <error id="unsignedLessThanZero" severity="style" msg="Checking if unsigned expression &apos;reftable_offset&apos; is less than zero." verbose="The unsigned expression &apos;reftable_offset&apos; will never be negative so it is either pointless or an error to check if it is." cwe="570" file0="sonar_samples/func_0084.c">
+            <location file="sonar_samples/func_0084.c" line="247" column="29" info="Unsigned less than zero"/>
+            <symbol>reftable_offset</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;reftable_offset&apos; shadows outer variable" verbose="Local variable &apos;reftable_offset&apos; shadows outer variable" cwe="398" file0="sonar_samples/func_0084.c">
+            <location file="sonar_samples/func_0084.c" line="27" column="18" info="Shadow local variable"/>
+            <location file="sonar_samples/func_0084.c" line="13" column="37" info="Shadowed variable"/>
+            <symbol>reftable_offset</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;reftable_clusters&apos; shadows outer variable" verbose="Local variable &apos;reftable_clusters&apos; shadows outer variable" cwe="398" file0="sonar_samples/func_0084.c">
+            <location file="sonar_samples/func_0084.c" line="29" column="18" info="Shadow local variable"/>
+            <location file="sonar_samples/func_0084.c" line="29" column="18" info="Shadowed variable"/>
+            <symbol>reftable_clusters</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;reftable_clusters&apos; shadows outer variable" verbose="Local variable &apos;reftable_clusters&apos; shadows outer variable" cwe="398" file0="sonar_samples/func_0084.c">
+            <location file="sonar_samples/func_0084.c" line="147" column="22" info="Shadow local variable"/>
+            <location file="sonar_samples/func_0084.c" line="29" column="18" info="Shadowed variable"/>
+            <symbol>reftable_clusters</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;reftable_clusters&apos; shadows outer variable" verbose="Local variable &apos;reftable_clusters&apos; shadows outer variable" cwe="398" file0="sonar_samples/func_0084.c">
+            <location file="sonar_samples/func_0084.c" line="223" column="39" info="Shadow local variable"/>
+            <location file="sonar_samples/func_0084.c" line="29" column="18" info="Shadowed variable"/>
+            <symbol>reftable_clusters</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;reftable_offset&apos; is assigned a value that is never used." verbose="Variable &apos;reftable_offset&apos; is assigned a value that is never used." cwe="563" file0="sonar_samples/func_0084.c">
+            <location file="sonar_samples/func_0084.c" line="129" column="29"/>
+            <symbol>reftable_offset</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;reftable_offset&apos; is assigned a value that is never used." verbose="Variable &apos;reftable_offset&apos; is assigned a value that is never used." cwe="563" file0="sonar_samples/func_0084.c">
+            <location file="sonar_samples/func_0084.c" line="151" column="29"/>
+            <symbol>reftable_offset</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;reftable_offset&apos; is assigned a value that is never used." verbose="Variable &apos;reftable_offset&apos; is assigned a value that is never used." cwe="563" file0="sonar_samples/func_0084.c">
+            <location file="sonar_samples/func_0084.c" line="241" column="25"/>
+            <symbol>reftable_offset</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;reftable_offset&apos; is assigned a value that is never used." verbose="Variable &apos;reftable_offset&apos; is assigned a value that is never used." cwe="563" file0="sonar_samples/func_0084.c">
+            <location file="sonar_samples/func_0084.c" line="13" column="37"/>
+            <symbol>reftable_offset</symbol>
+        </error>
+        <error id="normalCheckLevelMaxBranches" severity="information" msg="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." verbose="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." file0="sonar_samples/func_0086.c">
+            <location file="sonar_samples/func_0086.c" line="0" column="0"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;idx&apos; can be reduced." verbose="The scope of the variable &apos;idx&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0086.c">
+            <location file="sonar_samples/func_0086.c" line="29" column="12"/>
+            <symbol>idx</symbol>
+        </error>
+        <error id="normalCheckLevelMaxBranches" severity="information" msg="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." verbose="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." file0="sonar_samples/func_0088.c">
+            <location file="sonar_samples/func_0088.c" line="0" column="0"/>
+        </error>
+        <error id="normalCheckLevelMaxBranches" severity="information" msg="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." verbose="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." file0="sonar_samples/func_0089.c">
+            <location file="sonar_samples/func_0089.c" line="0" column="0"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;pde&apos; can be reduced." verbose="The scope of the variable &apos;pde&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0089.c">
+            <location file="sonar_samples/func_0089.c" line="127" column="18"/>
+            <symbol>pde</symbol>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;env&apos; can be declared as pointer to const" verbose="Parameter &apos;env&apos; can be declared as pointer to const" cwe="398" file0="sonar_samples/func_0089.c">
+            <location file="sonar_samples/func_0089.c" line="1" column="54" info="Parameter &apos;env&apos; can be declared as pointer to const"/>
+            <symbol>env</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="sonar_samples/func_0091.c">
+            <location file="sonar_samples/func_0091.c" line="15" column="18"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: val0" verbose="Uninitialized variable: val0" cwe="457" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="241" column="15"/>
+            <symbol>val0</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: val1" verbose="Uninitialized variable: val1" cwe="457" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="243" column="15"/>
+            <symbol>val1</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: val2" verbose="Uninitialized variable: val2" cwe="457" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="245" column="15"/>
+            <symbol>val2</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: val3" verbose="Uninitialized variable: val3" cwe="457" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="247" column="15"/>
+            <symbol>val3</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: val4" verbose="Uninitialized variable: val4" cwe="457" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="249" column="15"/>
+            <symbol>val4</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: val5" verbose="Uninitialized variable: val5" cwe="457" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="251" column="15"/>
+            <symbol>val5</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: val6" verbose="Uninitialized variable: val6" cwe="457" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="253" column="15"/>
+            <symbol>val6</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: val7" verbose="Uninitialized variable: val7" cwe="457" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="255" column="15"/>
+            <symbol>val7</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: val8" verbose="Uninitialized variable: val8" cwe="457" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="257" column="15"/>
+            <symbol>val8</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: val9" verbose="Uninitialized variable: val9" cwe="457" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="259" column="15"/>
+            <symbol>val9</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: val10" verbose="Uninitialized variable: val10" cwe="457" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="261" column="15"/>
+            <symbol>val10</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: val11" verbose="Uninitialized variable: val11" cwe="457" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="263" column="15"/>
+            <symbol>val11</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: val12" verbose="Uninitialized variable: val12" cwe="457" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="265" column="15"/>
+            <symbol>val12</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: val13" verbose="Uninitialized variable: val13" cwe="457" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="267" column="15"/>
+            <symbol>val13</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: val14" verbose="Uninitialized variable: val14" cwe="457" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="269" column="15"/>
+            <symbol>val14</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: val15" verbose="Uninitialized variable: val15" cwe="457" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="271" column="15"/>
+            <symbol>val15</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: val16" verbose="Uninitialized variable: val16" cwe="457" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="291" column="15"/>
+            <symbol>val16</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: val24" verbose="Uninitialized variable: val24" cwe="457" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="291" column="23"/>
+            <symbol>val24</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: val17" verbose="Uninitialized variable: val17" cwe="457" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="293" column="15"/>
+            <symbol>val17</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: val25" verbose="Uninitialized variable: val25" cwe="457" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="293" column="23"/>
+            <symbol>val25</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: val18" verbose="Uninitialized variable: val18" cwe="457" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="295" column="15"/>
+            <symbol>val18</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: val26" verbose="Uninitialized variable: val26" cwe="457" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="295" column="23"/>
+            <symbol>val26</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: val19" verbose="Uninitialized variable: val19" cwe="457" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="297" column="15"/>
+            <symbol>val19</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: val27" verbose="Uninitialized variable: val27" cwe="457" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="297" column="23"/>
+            <symbol>val27</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: val20" verbose="Uninitialized variable: val20" cwe="457" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="299" column="15"/>
+            <symbol>val20</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: val28" verbose="Uninitialized variable: val28" cwe="457" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="299" column="23"/>
+            <symbol>val28</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: val21" verbose="Uninitialized variable: val21" cwe="457" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="301" column="15"/>
+            <symbol>val21</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: val29" verbose="Uninitialized variable: val29" cwe="457" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="301" column="23"/>
+            <symbol>val29</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: val22" verbose="Uninitialized variable: val22" cwe="457" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="303" column="15"/>
+            <symbol>val22</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: val30" verbose="Uninitialized variable: val30" cwe="457" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="303" column="23"/>
+            <symbol>val30</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: val23" verbose="Uninitialized variable: val23" cwe="457" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="305" column="15"/>
+            <symbol>val23</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: val31" verbose="Uninitialized variable: val31" cwe="457" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="305" column="23"/>
+            <symbol>val31</symbol>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: tmp0" verbose="Unused variable: tmp0" cwe="563" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="5" column="14"/>
+            <symbol>tmp0</symbol>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: tmp1" verbose="Unused variable: tmp1" cwe="563" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="5" column="20"/>
+            <symbol>tmp1</symbol>
+        </error>
+        <error id="unassignedVariable" severity="style" msg="Variable &apos;val0&apos; is not assigned a value." verbose="Variable &apos;val0&apos; is not assigned a value." cwe="665" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="9" column="14"/>
+            <symbol>val0</symbol>
+        </error>
+        <error id="unassignedVariable" severity="style" msg="Variable &apos;val1&apos; is not assigned a value." verbose="Variable &apos;val1&apos; is not assigned a value." cwe="665" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="9" column="21"/>
+            <symbol>val1</symbol>
+        </error>
+        <error id="unassignedVariable" severity="style" msg="Variable &apos;val2&apos; is not assigned a value." verbose="Variable &apos;val2&apos; is not assigned a value." cwe="665" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="9" column="28"/>
+            <symbol>val2</symbol>
+        </error>
+        <error id="unassignedVariable" severity="style" msg="Variable &apos;val3&apos; is not assigned a value." verbose="Variable &apos;val3&apos; is not assigned a value." cwe="665" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="9" column="35"/>
+            <symbol>val3</symbol>
+        </error>
+        <error id="unassignedVariable" severity="style" msg="Variable &apos;val4&apos; is not assigned a value." verbose="Variable &apos;val4&apos; is not assigned a value." cwe="665" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="9" column="42"/>
+            <symbol>val4</symbol>
+        </error>
+        <error id="unassignedVariable" severity="style" msg="Variable &apos;val5&apos; is not assigned a value." verbose="Variable &apos;val5&apos; is not assigned a value." cwe="665" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="9" column="49"/>
+            <symbol>val5</symbol>
+        </error>
+        <error id="unassignedVariable" severity="style" msg="Variable &apos;val6&apos; is not assigned a value." verbose="Variable &apos;val6&apos; is not assigned a value." cwe="665" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="9" column="56"/>
+            <symbol>val6</symbol>
+        </error>
+        <error id="unassignedVariable" severity="style" msg="Variable &apos;val7&apos; is not assigned a value." verbose="Variable &apos;val7&apos; is not assigned a value." cwe="665" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="9" column="63"/>
+            <symbol>val7</symbol>
+        </error>
+        <error id="unassignedVariable" severity="style" msg="Variable &apos;val8&apos; is not assigned a value." verbose="Variable &apos;val8&apos; is not assigned a value." cwe="665" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="11" column="14"/>
+            <symbol>val8</symbol>
+        </error>
+        <error id="unassignedVariable" severity="style" msg="Variable &apos;val9&apos; is not assigned a value." verbose="Variable &apos;val9&apos; is not assigned a value." cwe="665" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="11" column="21"/>
+            <symbol>val9</symbol>
+        </error>
+        <error id="unassignedVariable" severity="style" msg="Variable &apos;val10&apos; is not assigned a value." verbose="Variable &apos;val10&apos; is not assigned a value." cwe="665" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="11" column="28"/>
+            <symbol>val10</symbol>
+        </error>
+        <error id="unassignedVariable" severity="style" msg="Variable &apos;val11&apos; is not assigned a value." verbose="Variable &apos;val11&apos; is not assigned a value." cwe="665" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="11" column="35"/>
+            <symbol>val11</symbol>
+        </error>
+        <error id="unassignedVariable" severity="style" msg="Variable &apos;val12&apos; is not assigned a value." verbose="Variable &apos;val12&apos; is not assigned a value." cwe="665" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="11" column="42"/>
+            <symbol>val12</symbol>
+        </error>
+        <error id="unassignedVariable" severity="style" msg="Variable &apos;val13&apos; is not assigned a value." verbose="Variable &apos;val13&apos; is not assigned a value." cwe="665" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="11" column="49"/>
+            <symbol>val13</symbol>
+        </error>
+        <error id="unassignedVariable" severity="style" msg="Variable &apos;val14&apos; is not assigned a value." verbose="Variable &apos;val14&apos; is not assigned a value." cwe="665" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="11" column="56"/>
+            <symbol>val14</symbol>
+        </error>
+        <error id="unassignedVariable" severity="style" msg="Variable &apos;val15&apos; is not assigned a value." verbose="Variable &apos;val15&apos; is not assigned a value." cwe="665" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="11" column="63"/>
+            <symbol>val15</symbol>
+        </error>
+        <error id="unassignedVariable" severity="style" msg="Variable &apos;val16&apos; is not assigned a value." verbose="Variable &apos;val16&apos; is not assigned a value." cwe="665" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="13" column="14"/>
+            <symbol>val16</symbol>
+        </error>
+        <error id="unassignedVariable" severity="style" msg="Variable &apos;val17&apos; is not assigned a value." verbose="Variable &apos;val17&apos; is not assigned a value." cwe="665" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="13" column="21"/>
+            <symbol>val17</symbol>
+        </error>
+        <error id="unassignedVariable" severity="style" msg="Variable &apos;val18&apos; is not assigned a value." verbose="Variable &apos;val18&apos; is not assigned a value." cwe="665" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="13" column="28"/>
+            <symbol>val18</symbol>
+        </error>
+        <error id="unassignedVariable" severity="style" msg="Variable &apos;val19&apos; is not assigned a value." verbose="Variable &apos;val19&apos; is not assigned a value." cwe="665" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="13" column="35"/>
+            <symbol>val19</symbol>
+        </error>
+        <error id="unassignedVariable" severity="style" msg="Variable &apos;val20&apos; is not assigned a value." verbose="Variable &apos;val20&apos; is not assigned a value." cwe="665" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="13" column="42"/>
+            <symbol>val20</symbol>
+        </error>
+        <error id="unassignedVariable" severity="style" msg="Variable &apos;val21&apos; is not assigned a value." verbose="Variable &apos;val21&apos; is not assigned a value." cwe="665" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="13" column="49"/>
+            <symbol>val21</symbol>
+        </error>
+        <error id="unassignedVariable" severity="style" msg="Variable &apos;val22&apos; is not assigned a value." verbose="Variable &apos;val22&apos; is not assigned a value." cwe="665" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="13" column="56"/>
+            <symbol>val22</symbol>
+        </error>
+        <error id="unassignedVariable" severity="style" msg="Variable &apos;val23&apos; is not assigned a value." verbose="Variable &apos;val23&apos; is not assigned a value." cwe="665" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="13" column="63"/>
+            <symbol>val23</symbol>
+        </error>
+        <error id="unassignedVariable" severity="style" msg="Variable &apos;val24&apos; is not assigned a value." verbose="Variable &apos;val24&apos; is not assigned a value." cwe="665" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="15" column="14"/>
+            <symbol>val24</symbol>
+        </error>
+        <error id="unassignedVariable" severity="style" msg="Variable &apos;val25&apos; is not assigned a value." verbose="Variable &apos;val25&apos; is not assigned a value." cwe="665" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="15" column="21"/>
+            <symbol>val25</symbol>
+        </error>
+        <error id="unassignedVariable" severity="style" msg="Variable &apos;val26&apos; is not assigned a value." verbose="Variable &apos;val26&apos; is not assigned a value." cwe="665" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="15" column="28"/>
+            <symbol>val26</symbol>
+        </error>
+        <error id="unassignedVariable" severity="style" msg="Variable &apos;val27&apos; is not assigned a value." verbose="Variable &apos;val27&apos; is not assigned a value." cwe="665" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="15" column="35"/>
+            <symbol>val27</symbol>
+        </error>
+        <error id="unassignedVariable" severity="style" msg="Variable &apos;val28&apos; is not assigned a value." verbose="Variable &apos;val28&apos; is not assigned a value." cwe="665" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="15" column="42"/>
+            <symbol>val28</symbol>
+        </error>
+        <error id="unassignedVariable" severity="style" msg="Variable &apos;val29&apos; is not assigned a value." verbose="Variable &apos;val29&apos; is not assigned a value." cwe="665" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="15" column="49"/>
+            <symbol>val29</symbol>
+        </error>
+        <error id="unassignedVariable" severity="style" msg="Variable &apos;val30&apos; is not assigned a value." verbose="Variable &apos;val30&apos; is not assigned a value." cwe="665" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="15" column="56"/>
+            <symbol>val30</symbol>
+        </error>
+        <error id="unassignedVariable" severity="style" msg="Variable &apos;val31&apos; is not assigned a value." verbose="Variable &apos;val31&apos; is not assigned a value." cwe="665" file0="sonar_samples/func_0093.c">
+            <location file="sonar_samples/func_0093.c" line="15" column="63"/>
+            <symbol>val31</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="Unmatched &apos;)&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;)&apos;. Configuration: &apos;&apos;." file0="sonar_samples/func_0094.c">
+            <location file="sonar_samples/func_0094.c" line="106" column="48"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="failed to evaluate #if condition, undefined function-like macro invocation: QEMU_GNUC_PREREQ( ... )" verbose="failed to evaluate #if condition, undefined function-like macro invocation: QEMU_GNUC_PREREQ( ... )">
+            <location file="sonar_samples/func_0097.c" line="53" column="2"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;iscsi_url!=NULL&apos; is redundant or there is possible null pointer dereference: iscsi_url." verbose="Either the condition &apos;iscsi_url!=NULL&apos; is redundant or there is possible null pointer dereference: iscsi_url." cwe="476" file0="sonar_samples/func_0098.c">
+            <location file="sonar_samples/func_0098.c" line="105" column="27" info="Null pointer dereference"/>
+            <location file="sonar_samples/func_0098.c" line="193" column="19" info="Assuming that condition &apos;iscsi_url!=NULL&apos; is not redundant"/>
+            <symbol>iscsi_url</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;iscsi_url!=NULL&apos; is redundant or there is possible null pointer dereference: iscsi_url." verbose="Either the condition &apos;iscsi_url!=NULL&apos; is redundant or there is possible null pointer dereference: iscsi_url." cwe="476" file0="sonar_samples/func_0098.c">
+            <location file="sonar_samples/func_0098.c" line="135" column="32" info="Null pointer dereference"/>
+            <location file="sonar_samples/func_0098.c" line="193" column="19" info="Assuming that condition &apos;iscsi_url!=NULL&apos; is not redundant"/>
+            <symbol>iscsi_url</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;iscsi_url!=NULL&apos; is redundant or there is possible null pointer dereference: iscsi_url." verbose="Either the condition &apos;iscsi_url!=NULL&apos; is redundant or there is possible null pointer dereference: iscsi_url." cwe="476" file0="sonar_samples/func_0098.c">
+            <location file="sonar_samples/func_0098.c" line="151" column="23" info="Null pointer dereference"/>
+            <location file="sonar_samples/func_0098.c" line="193" column="19" info="Assuming that condition &apos;iscsi_url!=NULL&apos; is not redundant"/>
+            <symbol>iscsi_url</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;iscsi_url!=NULL&apos; is redundant or there is possible null pointer dereference: iscsi_url." verbose="Either the condition &apos;iscsi_url!=NULL&apos; is redundant or there is possible null pointer dereference: iscsi_url." cwe="476" file0="sonar_samples/func_0098.c">
+            <location file="sonar_samples/func_0098.c" line="155" column="41" info="Null pointer dereference"/>
+            <location file="sonar_samples/func_0098.c" line="193" column="19" info="Assuming that condition &apos;iscsi_url!=NULL&apos; is not redundant"/>
+            <symbol>iscsi_url</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;iscsi_url!=NULL&apos; is redundant or there is possible null pointer dereference: iscsi_url." verbose="Either the condition &apos;iscsi_url!=NULL&apos; is redundant or there is possible null pointer dereference: iscsi_url." cwe="476" file0="sonar_samples/func_0098.c">
+            <location file="sonar_samples/func_0098.c" line="155" column="60" info="Null pointer dereference"/>
+            <location file="sonar_samples/func_0098.c" line="193" column="19" info="Assuming that condition &apos;iscsi_url!=NULL&apos; is not redundant"/>
+            <symbol>iscsi_url</symbol>
+        </error>
+        <error id="normalCheckLevelMaxBranches" severity="information" msg="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." verbose="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." file0="sonar_samples/func_0099.c">
+            <location file="sonar_samples/func_0099.c" line="0" column="0"/>
+        </error>
+        <error id="returnImplicitInt" severity="portability" msg="Omitted return type of function &apos;theora_gptopts&apos; defaults to int, this is not supported by ISO C99 and later standards." verbose="Omitted return type of function &apos;theora_gptopts&apos; defaults to int, this is not supported by ISO C99 and later standards." file0="sonar_samples/func_0100.c">
+            <location file="sonar_samples/func_0100.c" line="1" column="1"/>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;ctx&apos; can be declared as pointer to const" verbose="Parameter &apos;ctx&apos; can be declared as pointer to const" cwe="398" file0="sonar_samples/func_0100.c">
+            <location file="sonar_samples/func_0100.c" line="1" column="33" info="Parameter &apos;ctx&apos; can be declared as pointer to const"/>
+            <symbol>ctx</symbol>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;thp&apos; can be declared as pointer to const" verbose="Variable &apos;thp&apos; can be declared as pointer to const" cwe="398" file0="sonar_samples/func_0100.c">
+            <location file="sonar_samples/func_0100.c" line="9" column="27" info="Variable &apos;thp&apos; can be declared as pointer to const"/>
+            <symbol>thp</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;arg_name&apos; can be reduced." verbose="The scope of the variable &apos;arg_name&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0105.c">
+            <location file="sonar_samples/func_0105.c" line="7" column="17"/>
+            <symbol>arg_name</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;arg_obj&apos; can be reduced." verbose="The scope of the variable &apos;arg_obj&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0105.c">
+            <location file="sonar_samples/func_0105.c" line="9" column="20"/>
+            <symbol>arg_obj</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="sonar_samples/func_0106.c">
+            <location file="sonar_samples/func_0106.c" line="61" column="26"/>
+        </error>
+        <error id="normalCheckLevelMaxBranches" severity="information" msg="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." verbose="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." file0="sonar_samples/func_0110.c">
+            <location file="sonar_samples/func_0110.c" line="0" column="0"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If FUNCC is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If FUNCC is a macro then please configure it." file0="sonar_samples/func_0111.c">
+            <location file="sonar_samples/func_0111.c" line="1" column="13"/>
+        </error>
+        <error id="normalCheckLevelMaxBranches" severity="information" msg="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." verbose="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." file0="sonar_samples/func_0112.c">
+            <location file="sonar_samples/func_0112.c" line="0" column="0"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;src0&apos; can be reduced." verbose="The scope of the variable &apos;src0&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0113.c">
+            <location file="sonar_samples/func_0113.c" line="27" column="11"/>
+            <symbol>src0</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;src1&apos; can be reduced." verbose="The scope of the variable &apos;src1&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0113.c">
+            <location file="sonar_samples/func_0113.c" line="27" column="17"/>
+            <symbol>src1</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;src2&apos; can be reduced." verbose="The scope of the variable &apos;src2&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0113.c">
+            <location file="sonar_samples/func_0113.c" line="27" column="23"/>
+            <symbol>src2</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;src3&apos; can be reduced." verbose="The scope of the variable &apos;src3&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0113.c">
+            <location file="sonar_samples/func_0113.c" line="27" column="29"/>
+            <symbol>src3</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;dst0&apos; can be reduced." verbose="The scope of the variable &apos;dst0&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0113.c">
+            <location file="sonar_samples/func_0113.c" line="29" column="11"/>
+            <symbol>dst0</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;dst1&apos; can be reduced." verbose="The scope of the variable &apos;dst1&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0113.c">
+            <location file="sonar_samples/func_0113.c" line="29" column="17"/>
+            <symbol>dst1</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;dst2&apos; can be reduced." verbose="The scope of the variable &apos;dst2&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0113.c">
+            <location file="sonar_samples/func_0113.c" line="29" column="23"/>
+            <symbol>dst2</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;dst3&apos; can be reduced." verbose="The scope of the variable &apos;dst3&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0113.c">
+            <location file="sonar_samples/func_0113.c" line="29" column="29"/>
+            <symbol>dst3</symbol>
+        </error>
+        <error id="normalCheckLevelMaxBranches" severity="information" msg="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." verbose="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." file0="sonar_samples/func_0115.c">
+            <location file="sonar_samples/func_0115.c" line="0" column="0"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;ret&apos; can be reduced." verbose="The scope of the variable &apos;ret&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0115.c">
+            <location file="sonar_samples/func_0115.c" line="5" column="9"/>
+            <symbol>ret</symbol>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;avpkt&apos; can be declared as pointer to const" verbose="Parameter &apos;avpkt&apos; can be declared as pointer to const" cwe="398" file0="sonar_samples/func_0117.c">
+            <location file="sonar_samples/func_0117.c" line="5" column="42" info="Parameter &apos;avpkt&apos; can be declared as pointer to const"/>
+            <symbol>avpkt</symbol>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;acb&apos; can be declared as pointer to const" verbose="Variable &apos;acb&apos; can be declared as pointer to const" cwe="398" file0="sonar_samples/func_0118.c">
+            <location file="sonar_samples/func_0118.c" line="95" column="31" info="Variable &apos;acb&apos; can be declared as pointer to const"/>
+            <symbol>acb</symbol>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;opaque&apos; can be declared as pointer to const" verbose="Parameter &apos;opaque&apos; can be declared as pointer to const" cwe="398" file0="sonar_samples/func_0120.c">
+            <location file="sonar_samples/func_0120.c" line="1" column="63" info="Parameter &apos;opaque&apos; can be declared as pointer to const"/>
+            <symbol>opaque</symbol>
+        </error>
+        <error id="normalCheckLevelMaxBranches" severity="information" msg="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." verbose="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." file0="sonar_samples/func_0121.c">
+            <location file="sonar_samples/func_0121.c" line="0" column="0"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;res&apos; can be reduced." verbose="The scope of the variable &apos;res&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0121.c">
+            <location file="sonar_samples/func_0121.c" line="17" column="27"/>
+            <symbol>res</symbol>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;avpkt&apos; can be declared as pointer to const" verbose="Parameter &apos;avpkt&apos; can be declared as pointer to const" cwe="398" file0="sonar_samples/func_0121.c">
+            <location file="sonar_samples/func_0121.c" line="5" column="39" info="Parameter &apos;avpkt&apos; can be declared as pointer to const"/>
+            <symbol>avpkt</symbol>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: block" verbose="Unused variable: block" cwe="563" file0="sonar_samples/func_0125.c">
+            <location file="sonar_samples/func_0125.c" line="5" column="14"/>
+            <symbol>block</symbol>
+        </error>
+        <error id="normalCheckLevelMaxBranches" severity="information" msg="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." verbose="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." file0="sonar_samples/func_0125.c">
+            <location file="sonar_samples/func_0125.c" line="0" column="0"/>
+        </error>
+        <error id="normalCheckLevelMaxBranches" severity="information" msg="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." verbose="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." file0="sonar_samples/func_0130.c">
+            <location file="sonar_samples/func_0130.c" line="0" column="0"/>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;env&apos; can be declared as pointer to const" verbose="Parameter &apos;env&apos; can be declared as pointer to const" cwe="398" file0="sonar_samples/func_0131.c">
+            <location file="sonar_samples/func_0131.c" line="1" column="26" info="Parameter &apos;env&apos; can be declared as pointer to const"/>
+            <symbol>env</symbol>
+        </error>
+        <error id="normalCheckLevelMaxBranches" severity="information" msg="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." verbose="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." file0="sonar_samples/func_0135.c">
+            <location file="sonar_samples/func_0135.c" line="0" column="0"/>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;avctx&apos; can be declared as pointer to const" verbose="Parameter &apos;avctx&apos; can be declared as pointer to const" cwe="398" file0="sonar_samples/func_0135.c">
+            <location file="sonar_samples/func_0135.c" line="1" column="66" info="Parameter &apos;avctx&apos; can be declared as pointer to const"/>
+            <symbol>avctx</symbol>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;h&apos; can be declared as pointer to const" verbose="Variable &apos;h&apos; can be declared as pointer to const" cwe="398" file0="sonar_samples/func_0135.c">
+            <location file="sonar_samples/func_0135.c" line="9" column="18" info="Variable &apos;h&apos; can be declared as pointer to const"/>
+            <symbol>h</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="sonar_samples/func_0137.c">
+            <location file="sonar_samples/func_0137.c" line="53" column="48"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;PCNET_DEBUG=PCNET_DEBUG&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;PCNET_DEBUG=PCNET_DEBUG&apos;." file0="sonar_samples/func_0137.c">
+            <location file="sonar_samples/func_0137.c" line="53" column="48"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;PCNET_DEBUG_MATCH=PCNET_DEBUG_MATCH&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;PCNET_DEBUG_MATCH=PCNET_DEBUG_MATCH&apos;." file0="sonar_samples/func_0137.c">
+            <location file="sonar_samples/func_0137.c" line="53" column="48"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;PCNET_DEBUG_RMD=PCNET_DEBUG_RMD&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;PCNET_DEBUG_RMD=PCNET_DEBUG_RMD&apos;." file0="sonar_samples/func_0137.c">
+            <location file="sonar_samples/func_0137.c" line="53" column="48"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If TARGET_FMT_lx is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If TARGET_FMT_lx is a macro then please configure it." file0="sonar_samples/func_0139.c">
+            <location file="sonar_samples/func_0139.c" line="19" column="23"/>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;base&apos; can be declared as pointer to const" verbose="Parameter &apos;base&apos; can be declared as pointer to const" cwe="398" file0="sonar_samples/func_0141.c">
+            <location file="sonar_samples/func_0141.c" line="3" column="61" info="Parameter &apos;base&apos; can be declared as pointer to const"/>
+            <symbol>base</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="sonar_samples/func_0145.c">
+            <location file="sonar_samples/func_0145.c" line="315" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If TARGET_FMT_plx is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If TARGET_FMT_plx is a macro then please configure it." file0="sonar_samples/func_0147.c">
+            <location file="sonar_samples/func_0147.c" line="15" column="48"/>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;avctx&apos; can be declared as pointer to const" verbose="Parameter &apos;avctx&apos; can be declared as pointer to const" cwe="398" file0="sonar_samples/func_0156.c">
+            <location file="sonar_samples/func_0156.c" line="1" column="65" info="Parameter &apos;avctx&apos; can be declared as pointer to const"/>
+            <symbol>avctx</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="sonar_samples/func_0157.c">
+            <location file="sonar_samples/func_0157.c" line="9" column="31"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;s&apos; can be reduced." verbose="The scope of the variable &apos;s&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0158.c">
+            <location file="sonar_samples/func_0158.c" line="13" column="11"/>
+            <symbol>s</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;a&apos; can be reduced." verbose="The scope of the variable &apos;a&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0158.c">
+            <location file="sonar_samples/func_0158.c" line="13" column="14"/>
+            <symbol>a</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;e&apos; can be reduced." verbose="The scope of the variable &apos;e&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0158.c">
+            <location file="sonar_samples/func_0158.c" line="13" column="22"/>
+            <symbol>e</symbol>
+        </error>
+        <error id="normalCheckLevelMaxBranches" severity="information" msg="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." verbose="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." file0="sonar_samples/func_0159.c">
+            <location file="sonar_samples/func_0159.c" line="0" column="0"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;buf&apos; can be reduced." verbose="The scope of the variable &apos;buf&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0159.c">
+            <location file="sonar_samples/func_0159.c" line="5" column="10"/>
+            <symbol>buf</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;opts_format&apos; can be reduced." verbose="The scope of the variable &apos;opts_format&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0159.c">
+            <location file="sonar_samples/func_0159.c" line="5" column="36"/>
+            <symbol>opts_format</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;err&apos; can be reduced." verbose="The scope of the variable &apos;err&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0159.c">
+            <location file="sonar_samples/func_0159.c" line="7" column="9"/>
+            <symbol>err</symbol>
+        </error>
+        <error id="normalCheckLevelMaxBranches" severity="information" msg="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." verbose="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." file0="sonar_samples/func_0160.c">
+            <location file="sonar_samples/func_0160.c" line="0" column="0"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If SAMPLES_NEEDED_2 is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If SAMPLES_NEEDED_2 is a macro then please configure it." file0="sonar_samples/func_0161.c">
+            <location file="sonar_samples/func_0161.c" line="211" column="13"/>
+        </error>
+        <error id="returnImplicitInt" severity="portability" msg="Omitted return type of function &apos;rdt_free_extradata&apos; defaults to int, this is not supported by ISO C99 and later standards." verbose="Omitted return type of function &apos;rdt_free_extradata&apos; defaults to int, this is not supported by ISO C99 and later standards." file0="sonar_samples/func_0162.c">
+            <location file="sonar_samples/func_0162.c" line="1" column="1"/>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;p&apos; can be declared as pointer to const" verbose="Variable &apos;p&apos; can be declared as pointer to const" cwe="398" file0="sonar_samples/func_0163.c">
+            <location file="sonar_samples/func_0163.c" line="47" column="15" info="Variable &apos;p&apos; can be declared as pointer to const"/>
+            <symbol>p</symbol>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;s&apos; can be declared as pointer to const" verbose="Parameter &apos;s&apos; can be declared as pointer to const" cwe="398" file0="sonar_samples/func_0168.c">
+            <location file="sonar_samples/func_0168.c" line="1" column="45" info="Parameter &apos;s&apos; can be declared as pointer to const"/>
+            <symbol>s</symbol>
+        </error>
+        <error id="normalCheckLevelMaxBranches" severity="information" msg="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." verbose="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." file0="sonar_samples/func_0169.c">
+            <location file="sonar_samples/func_0169.c" line="0" column="0"/>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;s&apos; can be declared as pointer to const" verbose="Parameter &apos;s&apos; can be declared as pointer to const" cwe="398" file0="sonar_samples/func_0169.c">
+            <location file="sonar_samples/func_0169.c" line="1" column="44" info="Parameter &apos;s&apos; can be declared as pointer to const"/>
+            <symbol>s</symbol>
+        </error>
+        <error id="normalCheckLevelMaxBranches" severity="information" msg="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." verbose="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." file0="sonar_samples/func_0171.c">
+            <location file="sonar_samples/func_0171.c" line="0" column="0"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;v&apos; can be reduced." verbose="The scope of the variable &apos;v&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0171.c">
+            <location file="sonar_samples/func_0171.c" line="5" column="20"/>
+            <symbol>v</symbol>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;bs&apos; can be declared as pointer to const" verbose="Parameter &apos;bs&apos; can be declared as pointer to const" cwe="398" file0="sonar_samples/func_0173.c">
+            <location file="sonar_samples/func_0173.c" line="1" column="49" info="Parameter &apos;bs&apos; can be declared as pointer to const"/>
+            <symbol>bs</symbol>
+        </error>
+        <error id="normalCheckLevelMaxBranches" severity="information" msg="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." verbose="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." file0="sonar_samples/func_0175.c">
+            <location file="sonar_samples/func_0175.c" line="0" column="0"/>
+        </error>
+        <error id="duplicateCondition" severity="style" msg="The if condition is the same as the previous if condition" verbose="The if condition is the same as the previous if condition" cwe="398" file0="sonar_samples/func_0176.c">
+            <location file="sonar_samples/func_0176.c" line="49" column="13" info="Second condition"/>
+            <location file="sonar_samples/func_0176.c" line="29" column="13" info="First condition"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;tb&apos; can be reduced." verbose="The scope of the variable &apos;tb&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0176.c">
+            <location file="sonar_samples/func_0176.c" line="5" column="23"/>
+            <symbol>tb</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;pc&apos; can be reduced." verbose="The scope of the variable &apos;pc&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0176.c">
+            <location file="sonar_samples/func_0176.c" line="9" column="19"/>
+            <symbol>pc</symbol>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;retaddr&apos; can be declared as pointer to const" verbose="Parameter &apos;retaddr&apos; can be declared as pointer to const" cwe="398" file0="sonar_samples/func_0176.c">
+            <location file="sonar_samples/func_0176.c" line="1" column="67" info="Parameter &apos;retaddr&apos; can be declared as pointer to const"/>
+            <symbol>retaddr</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If TARGET_FMT_plx is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If TARGET_FMT_plx is a macro then please configure it." file0="sonar_samples/func_0182.c">
+            <location file="sonar_samples/func_0182.c" line="17" column="28"/>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;bs&apos; can be declared as pointer to const" verbose="Variable &apos;bs&apos; can be declared as pointer to const" cwe="398" file0="sonar_samples/func_0183.c">
+            <location file="sonar_samples/func_0183.c" line="9" column="23" info="Variable &apos;bs&apos; can be declared as pointer to const"/>
+            <symbol>bs</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;pbdev&apos; can be reduced." verbose="The scope of the variable &apos;pbdev&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0184.c">
+            <location file="sonar_samples/func_0184.c" line="7" column="23"/>
+            <symbol>pbdev</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;i&apos; can be reduced." verbose="The scope of the variable &apos;i&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0188.c">
+            <location file="sonar_samples/func_0188.c" line="15" column="14"/>
+            <symbol>i</symbol>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;s&apos; can be declared as pointer to const" verbose="Parameter &apos;s&apos; can be declared as pointer to const" cwe="398" file0="sonar_samples/func_0191.c">
+            <location file="sonar_samples/func_0191.c" line="1" column="53" info="Parameter &apos;s&apos; can be declared as pointer to const"/>
+            <symbol>s</symbol>
+        </error>
+        <error id="normalCheckLevelMaxBranches" severity="information" msg="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." verbose="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." file0="sonar_samples/func_0193.c">
+            <location file="sonar_samples/func_0193.c" line="0" column="0"/>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;sf&apos; can be declared as pointer to const" verbose="Variable &apos;sf&apos; can be declared as pointer to const" cwe="398" file0="sonar_samples/func_0193.c">
+            <location file="sonar_samples/func_0193.c" line="85" column="35" info="Variable &apos;sf&apos; can be declared as pointer to const"/>
+            <symbol>sf</symbol>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;ss&apos; can be declared as pointer to const" verbose="Variable &apos;ss&apos; can be declared as pointer to const" cwe="398" file0="sonar_samples/func_0193.c">
+            <location file="sonar_samples/func_0193.c" line="85" column="40" info="Variable &apos;ss&apos; can be declared as pointer to const"/>
+            <symbol>ss</symbol>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;ccf&apos; can be declared as pointer to const" verbose="Variable &apos;ccf&apos; can be declared as pointer to const" cwe="398" file0="sonar_samples/func_0193.c">
+            <location file="sonar_samples/func_0193.c" line="105" column="45" info="Variable &apos;ccf&apos; can be declared as pointer to const"/>
+            <symbol>ccf</symbol>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;ccs&apos; can be declared as pointer to const" verbose="Variable &apos;ccs&apos; can be declared as pointer to const" cwe="398" file0="sonar_samples/func_0193.c">
+            <location file="sonar_samples/func_0193.c" line="105" column="51" info="Variable &apos;ccs&apos; can be declared as pointer to const"/>
+            <symbol>ccs</symbol>
+        </error>
+        <error id="returnImplicitInt" severity="portability" msg="Omitted return type of function &apos;yuv2rgba64_1_c_template&apos; defaults to int, this is not supported by ISO C99 and later standards." verbose="Omitted return type of function &apos;yuv2rgba64_1_c_template&apos; defaults to int, this is not supported by ISO C99 and later standards." file0="sonar_samples/func_0197.c">
+            <location file="sonar_samples/func_0197.c" line="1" column="1"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;A1&apos; can be reduced." verbose="The scope of the variable &apos;A1&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0197.c">
+            <location file="sonar_samples/func_0197.c" line="15" column="9"/>
+            <symbol>A1</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;A2&apos; can be reduced." verbose="The scope of the variable &apos;A2&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="sonar_samples/func_0197.c">
+            <location file="sonar_samples/func_0197.c" line="15" column="26"/>
+            <symbol>A2</symbol>
+        </error>
+        <error id="shiftNegativeLHS" severity="portability" msg="Shifting a negative value is technically undefined behaviour" verbose="Shifting a negative value is technically undefined behaviour" cwe="758" file0="sonar_samples/func_0197.c">
+            <location file="sonar_samples/func_0197.c" line="27" column="40"/>
+        </error>
+        <error id="shiftNegativeLHS" severity="portability" msg="Shifting a negative value is technically undefined behaviour" verbose="Shifting a negative value is technically undefined behaviour" cwe="758" file0="sonar_samples/func_0197.c">
+            <location file="sonar_samples/func_0197.c" line="29" column="40"/>
+        </error>
+        <error id="shiftNegativeLHS" severity="portability" msg="Shifting a negative value is technically undefined behaviour" verbose="Shifting a negative value is technically undefined behaviour" cwe="758" file0="sonar_samples/func_0197.c">
+            <location file="sonar_samples/func_0197.c" line="119" column="51"/>
+        </error>
+        <error id="shiftNegativeLHS" severity="portability" msg="Shifting a negative value is technically undefined behaviour" verbose="Shifting a negative value is technically undefined behaviour" cwe="758" file0="sonar_samples/func_0197.c">
+            <location file="sonar_samples/func_0197.c" line="121" column="51"/>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;A1&apos; shadows outer variable" verbose="Local variable &apos;A1&apos; shadows outer variable" cwe="398" file0="sonar_samples/func_0197.c">
+            <location file="sonar_samples/func_0197.c" line="111" column="13" info="Shadow local variable"/>
+            <location file="sonar_samples/func_0197.c" line="15" column="9" info="Shadowed variable"/>
+            <symbol>A1</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;A2&apos; shadows outer variable" verbose="Local variable &apos;A2&apos; shadows outer variable" cwe="398" file0="sonar_samples/func_0197.c">
+            <location file="sonar_samples/func_0197.c" line="111" column="30" info="Shadow local variable"/>
+            <location file="sonar_samples/func_0197.c" line="15" column="26" info="Shadowed variable"/>
+            <symbol>A2</symbol>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;c&apos; can be declared as pointer to const" verbose="Parameter &apos;c&apos; can be declared as pointer to const" cwe="398" file0="sonar_samples/func_0197.c">
+            <location file="sonar_samples/func_0197.c" line="1" column="37" info="Parameter &apos;c&apos; can be declared as pointer to const"/>
+            <symbol>c</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;R&apos; is assigned a value that is never used." verbose="Variable &apos;R&apos; is assigned a value that is never used." cwe="563" file0="sonar_samples/func_0197.c">
+            <location file="sonar_samples/func_0197.c" line="65" column="15"/>
+            <symbol>R</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;B&apos; is assigned a value that is never used." verbose="Variable &apos;B&apos; is assigned a value that is never used." cwe="563" file0="sonar_samples/func_0197.c">
+            <location file="sonar_samples/func_0197.c" line="69" column="15"/>
+            <symbol>B</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;R&apos; is assigned a value that is never used." verbose="Variable &apos;R&apos; is assigned a value that is never used." cwe="563" file0="sonar_samples/func_0197.c">
+            <location file="sonar_samples/func_0197.c" line="157" column="15"/>
+            <symbol>R</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;B&apos; is assigned a value that is never used." verbose="Variable &apos;B&apos; is assigned a value that is never used." cwe="563" file0="sonar_samples/func_0197.c">
+            <location file="sonar_samples/func_0197.c" line="161" column="15"/>
+            <symbol>B</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If RAM_ADDR_FMT is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If RAM_ADDR_FMT is a macro then please configure it." file0="sonar_samples/func_0199.c">
+            <location file="sonar_samples/func_0199.c" line="115" column="56"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;w64_read_header&apos; is never used." verbose="The function &apos;w64_read_header&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0000.c" line="1" column="12"/>
+            <symbol>w64_read_header</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;vpc_close&apos; is never used." verbose="The function &apos;vpc_close&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0001.c" line="1" column="13"/>
+            <symbol>vpc_close</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;exec_start_outgoing_migration&apos; is never used." verbose="The function &apos;exec_start_outgoing_migration&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0002.c" line="1" column="17"/>
+            <symbol>exec_start_outgoing_migration</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;kvmclock_pre_save&apos; is never used." verbose="The function &apos;kvmclock_pre_save&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0003.c" line="1" column="13"/>
+            <symbol>kvmclock_pre_save</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;show_license&apos; is never used." verbose="The function &apos;show_license&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0005.c" line="1" column="5"/>
+            <symbol>show_license</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;svq1_encode_plane&apos; is never used." verbose="The function &apos;svq1_encode_plane&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0006.c" line="1" column="12"/>
+            <symbol>svq1_encode_plane</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;img_write_packet&apos; is never used." verbose="The function &apos;img_write_packet&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0007.c" line="1" column="12"/>
+            <symbol>img_write_packet</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;do_sendv_recvv&apos; is never used." verbose="The function &apos;do_sendv_recvv&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0008.c" line="1" column="12"/>
+            <symbol>do_sendv_recvv</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;vnc_dpy_copy&apos; is never used." verbose="The function &apos;vnc_dpy_copy&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0009.c" line="1" column="13"/>
+            <symbol>vnc_dpy_copy</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;wm8750_set_bclk_in&apos; is never used." verbose="The function &apos;wm8750_set_bclk_in&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0010.c" line="1" column="6"/>
+            <symbol>wm8750_set_bclk_in</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;qemu_chr_open_pipe&apos; is never used." verbose="The function &apos;qemu_chr_open_pipe&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0011.c" line="1" column="25"/>
+            <symbol>qemu_chr_open_pipe</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;test_function&apos; is never used." verbose="The function &apos;test_function&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0012.c" line="1" column="13"/>
+            <symbol>test_function</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;virtio_rng_class_init&apos; is never used." verbose="The function &apos;virtio_rng_class_init&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0013.c" line="1" column="13"/>
+            <symbol>virtio_rng_class_init</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;set_int8&apos; is never used." verbose="The function &apos;set_int8&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0014.c" line="1" column="13"/>
+            <symbol>set_int8</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;wsvqa_read_header&apos; is never used." verbose="The function &apos;wsvqa_read_header&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0015.c" line="1" column="12"/>
+            <symbol>wsvqa_read_header</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;lz_unpack&apos; is never used." verbose="The function &apos;lz_unpack&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0016.c" line="1" column="13"/>
+            <symbol>lz_unpack</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;mxf_read_track&apos; is never used." verbose="The function &apos;mxf_read_track&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0017.c" line="1" column="12"/>
+            <symbol>mxf_read_track</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;scsi_req_length&apos; is never used." verbose="The function &apos;scsi_req_length&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0018.c" line="1" column="12"/>
+            <symbol>scsi_req_length</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;pixlet_decode_frame&apos; is never used." verbose="The function &apos;pixlet_decode_frame&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0019.c" line="1" column="12"/>
+            <symbol>pixlet_decode_frame</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;nvme_io_cmd&apos; is never used." verbose="The function &apos;nvme_io_cmd&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0020.c" line="1" column="17"/>
+            <symbol>nvme_io_cmd</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;decode_b_picture_secondary_header&apos; is never used." verbose="The function &apos;decode_b_picture_secondary_header&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0021.c" line="1" column="12"/>
+            <symbol>decode_b_picture_secondary_header</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;v9fs_post_lcreate&apos; is never used." verbose="The function &apos;v9fs_post_lcreate&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0024.c" line="1" column="13"/>
+            <symbol>v9fs_post_lcreate</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;qio_task_propagate_error&apos; is never used." verbose="The function &apos;qio_task_propagate_error&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0025.c" line="1" column="6"/>
+            <symbol>qio_task_propagate_error</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;qemu_file_set_error&apos; is never used." verbose="The function &apos;qemu_file_set_error&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0026.c" line="1" column="6"/>
+            <symbol>qemu_file_set_error</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;check_add_res&apos; is never used." verbose="The function &apos;check_add_res&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0027.c" line="1" column="13"/>
+            <symbol>check_add_res</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;PPC_OP&apos; is never used." verbose="The function &apos;PPC_OP&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0028.c" line="1" column="1"/>
+            <symbol>PPC_OP</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;spapr_populate_pci_child_dt&apos; is never used." verbose="The function &apos;spapr_populate_pci_child_dt&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0029.c" line="1" column="12"/>
+            <symbol>spapr_populate_pci_child_dt</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;sd_do_command&apos; is never used." verbose="The function &apos;sd_do_command&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0030.c" line="1" column="5"/>
+            <symbol>sd_do_command</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;vhost_net_init&apos; is never used." verbose="The function &apos;vhost_net_init&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0031.c" line="1" column="19"/>
+            <symbol>vhost_net_init</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;vc1_apply_p_h_loop_filter&apos; is never used." verbose="The function &apos;vc1_apply_p_h_loop_filter&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0032.c" line="1" column="30"/>
+            <symbol>vc1_apply_p_h_loop_filter</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;vmdk_parse_extents&apos; is never used." verbose="The function &apos;vmdk_parse_extents&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0033.c" line="1" column="12"/>
+            <symbol>vmdk_parse_extents</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;ccid_initfn&apos; is never used." verbose="The function &apos;ccid_initfn&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0035.c" line="1" column="12"/>
+            <symbol>ccid_initfn</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;pci_add_option_rom&apos; is never used." verbose="The function &apos;pci_add_option_rom&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0036.c" line="1" column="13"/>
+            <symbol>pci_add_option_rom</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;calc_optimal_rice_params&apos; is never used." verbose="The function &apos;calc_optimal_rice_params&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0037.c" line="1" column="17"/>
+            <symbol>calc_optimal_rice_params</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;ppc_find_by_pvr&apos; is never used." verbose="The function &apos;ppc_find_by_pvr&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0038.c" line="1" column="5"/>
+            <symbol>ppc_find_by_pvr</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;bdrv_invalidate_cache_all&apos; is never used." verbose="The function &apos;bdrv_invalidate_cache_all&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0039.c" line="1" column="6"/>
+            <symbol>bdrv_invalidate_cache_all</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;nbd_client_closed&apos; is never used." verbose="The function &apos;nbd_client_closed&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0040.c" line="1" column="13"/>
+            <symbol>nbd_client_closed</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;qemu_co_sendv_recvv&apos; is never used." verbose="The function &apos;qemu_co_sendv_recvv&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0042.c" line="1" column="1"/>
+            <symbol>qemu_co_sendv_recvv</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;cpu_exec_init&apos; is never used." verbose="The function &apos;cpu_exec_init&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0043.c" line="1" column="6"/>
+            <symbol>cpu_exec_init</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;spapr_phb_vfio_get_loc_code&apos; is never used." verbose="The function &apos;spapr_phb_vfio_get_loc_code&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0044.c" line="1" column="14"/>
+            <symbol>spapr_phb_vfio_get_loc_code</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;decode_codestream&apos; is never used." verbose="The function &apos;decode_codestream&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0045.c" line="1" column="12"/>
+            <symbol>decode_codestream</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;mv_pred_direct&apos; is never used." verbose="The function &apos;mv_pred_direct&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0046.c" line="1" column="20"/>
+            <symbol>mv_pred_direct</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;omap_mcbsp_i2s_attach&apos; is never used." verbose="The function &apos;omap_mcbsp_i2s_attach&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0047.c" line="1" column="6"/>
+            <symbol>omap_mcbsp_i2s_attach</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;decode_entropy_coded_image&apos; is never used." verbose="The function &apos;decode_entropy_coded_image&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0048.c" line="1" column="12"/>
+            <symbol>decode_entropy_coded_image</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;spapr_phb_hot_plug_child&apos; is never used." verbose="The function &apos;spapr_phb_hot_plug_child&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0050.c" line="1" column="13"/>
+            <symbol>spapr_phb_hot_plug_child</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;vp8_mc_chroma&apos; is never used." verbose="The function &apos;vp8_mc_chroma&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0051.c" line="1" column="6"/>
+            <symbol>vp8_mc_chroma</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;av_parser_parse2&apos; is never used." verbose="The function &apos;av_parser_parse2&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0052.c" line="1" column="5"/>
+            <symbol>av_parser_parse2</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;lm32_juart_set_jtx&apos; is never used." verbose="The function &apos;lm32_juart_set_jtx&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0053.c" line="1" column="6"/>
+            <symbol>lm32_juart_set_jtx</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;mm_stop_timer&apos; is never used." verbose="The function &apos;mm_stop_timer&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0054.c" line="1" column="13"/>
+            <symbol>mm_stop_timer</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;decode_band&apos; is never used." verbose="The function &apos;decode_band&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0055.c" line="1" column="12"/>
+            <symbol>decode_band</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;unix_start_incoming_migration&apos; is never used." verbose="The function &apos;unix_start_incoming_migration&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0056.c" line="1" column="5"/>
+            <symbol>unix_start_incoming_migration</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;libquvi_read_header&apos; is never used." verbose="The function &apos;libquvi_read_header&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0057.c" line="1" column="12"/>
+            <symbol>libquvi_read_header</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;svq1_decode_init&apos; is never used." verbose="The function &apos;svq1_decode_init&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0058.c" line="1" column="12"/>
+            <symbol>svq1_decode_init</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;ppc405ep_compute_clocks&apos; is never used." verbose="The function &apos;ppc405ep_compute_clocks&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0059.c" line="1" column="13"/>
+            <symbol>ppc405ep_compute_clocks</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;qapi_dealloc_end_struct&apos; is never used." verbose="The function &apos;qapi_dealloc_end_struct&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0061.c" line="1" column="13"/>
+            <symbol>qapi_dealloc_end_struct</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;virtio_scsi_vring_init&apos; is never used." verbose="The function &apos;virtio_scsi_vring_init&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0062.c" line="1" column="25"/>
+            <symbol>virtio_scsi_vring_init</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;monitor_get_reg&apos; is never used." verbose="The function &apos;monitor_get_reg&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0063.c" line="1" column="20"/>
+            <symbol>monitor_get_reg</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;cpu_tick_set_count&apos; is never used." verbose="The function &apos;cpu_tick_set_count&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0064.c" line="1" column="6"/>
+            <symbol>cpu_tick_set_count</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;pl080_init&apos; is never used." verbose="The function &apos;pl080_init&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0065.c" line="1" column="7"/>
+            <symbol>pl080_init</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;wdt_diag288_class_init&apos; is never used." verbose="The function &apos;wdt_diag288_class_init&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0066.c" line="1" column="13"/>
+            <symbol>wdt_diag288_class_init</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;opus_decode_frame&apos; is never used." verbose="The function &apos;opus_decode_frame&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0067.c" line="1" column="12"/>
+            <symbol>opus_decode_frame</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;virtio_9p_device_init&apos; is never used." verbose="The function &apos;virtio_9p_device_init&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0068.c" line="1" column="12"/>
+            <symbol>virtio_9p_device_init</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;bios_linker_loader_alloc&apos; is never used." verbose="The function &apos;bios_linker_loader_alloc&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0069.c" line="1" column="6"/>
+            <symbol>bios_linker_loader_alloc</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;dnxhd_decode_close&apos; is never used." verbose="The function &apos;dnxhd_decode_close&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0070.c" line="1" column="20"/>
+            <symbol>dnxhd_decode_close</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;spapr_nvram_class_init&apos; is never used." verbose="The function &apos;spapr_nvram_class_init&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0072.c" line="1" column="13"/>
+            <symbol>spapr_nvram_class_init</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;ff_h264_flush_change&apos; is never used." verbose="The function &apos;ff_h264_flush_change&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0073.c" line="1" column="6"/>
+            <symbol>ff_h264_flush_change</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;filter_frame&apos; is never used." verbose="The function &apos;filter_frame&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0074.c" line="1" column="12"/>
+            <symbol>filter_frame</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;vdpau_frames_init&apos; is never used." verbose="The function &apos;vdpau_frames_init&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0075.c" line="1" column="12"/>
+            <symbol>vdpau_frames_init</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;fix_coding_method_array&apos; is never used." verbose="The function &apos;fix_coding_method_array&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0077.c" line="1" column="13"/>
+            <symbol>fix_coding_method_array</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;s390_virtio_rng_init&apos; is never used." verbose="The function &apos;s390_virtio_rng_init&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0078.c" line="1" column="12"/>
+            <symbol>s390_virtio_rng_init</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;sbr_hf_calc_npatches&apos; is never used." verbose="The function &apos;sbr_hf_calc_npatches&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0079.c" line="1" column="12"/>
+            <symbol>sbr_hf_calc_npatches</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;vhdx_log_write&apos; is never used." verbose="The function &apos;vhdx_log_write&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0080.c" line="1" column="12"/>
+            <symbol>vhdx_log_write</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;qpci_pc_config_writew&apos; is never used." verbose="The function &apos;qpci_pc_config_writew&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0081.c" line="1" column="13"/>
+            <symbol>qpci_pc_config_writew</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;os_host_main_loop_wait&apos; is never used." verbose="The function &apos;os_host_main_loop_wait&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0082.c" line="1" column="12"/>
+            <symbol>os_host_main_loop_wait</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;qemu_system_reset&apos; is never used." verbose="The function &apos;qemu_system_reset&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0083.c" line="1" column="6"/>
+            <symbol>qemu_system_reset</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;rebuild_refcount_structure&apos; is never used." verbose="The function &apos;rebuild_refcount_structure&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0084.c" line="1" column="12"/>
+            <symbol>rebuild_refcount_structure</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;aux_bridge_init&apos; is never used." verbose="The function &apos;aux_bridge_init&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0085.c" line="1" column="13"/>
+            <symbol>aux_bridge_init</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;ra144_encode_frame&apos; is never used." verbose="The function &apos;ra144_encode_frame&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0086.c" line="1" column="12"/>
+            <symbol>ra144_encode_frame</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;writev_f&apos; is never used." verbose="The function &apos;writev_f&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0087.c" line="1" column="12"/>
+            <symbol>writev_f</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;dxva2_map_frame&apos; is never used." verbose="The function &apos;dxva2_map_frame&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0088.c" line="1" column="12"/>
+            <symbol>dxva2_map_frame</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;cpu_get_phys_page_debug&apos; is never used." verbose="The function &apos;cpu_get_phys_page_debug&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0089.c" line="1" column="20"/>
+            <symbol>cpu_get_phys_page_debug</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;receive_from_chr_layer&apos; is never used." verbose="The function &apos;receive_from_chr_layer&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0090.c" line="1" column="13"/>
+            <symbol>receive_from_chr_layer</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;qxl_spice_monitors_config_async&apos; is never used." verbose="The function &apos;qxl_spice_monitors_config_async&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0092.c" line="1" column="13"/>
+            <symbol>qxl_spice_monitors_config_async</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;dct32&apos; is never used." verbose="The function &apos;dct32&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0093.c" line="1" column="6"/>
+            <symbol>dct32</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;cris_addc_pi_m&apos; is never used." verbose="The function &apos;cris_addc_pi_m&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0095.c" line="1" column="19"/>
+            <symbol>cris_addc_pi_m</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;aio_read_done&apos; is never used." verbose="The function &apos;aio_read_done&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0096.c" line="1" column="13"/>
+            <symbol>aio_read_done</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;cpu_exec&apos; is never used." verbose="The function &apos;cpu_exec&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0097.c" line="1" column="5"/>
+            <symbol>cpu_exec</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;iscsi_open&apos; is never used." verbose="The function &apos;iscsi_open&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0098.c" line="1" column="12"/>
+            <symbol>iscsi_open</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;slice_end&apos; is never used." verbose="The function &apos;slice_end&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0099.c" line="1" column="12"/>
+            <symbol>slice_end</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;theora_gptopts&apos; is never used." verbose="The function &apos;theora_gptopts&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0100.c" line="1" column="1"/>
+            <symbol>theora_gptopts</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;get_pcm&apos; is never used." verbose="The function &apos;get_pcm&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0101.c" line="1" column="12"/>
+            <symbol>get_pcm</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;av_bitstream_filter_init&apos; is never used." verbose="The function &apos;av_bitstream_filter_init&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0102.c" line="1" column="27"/>
+            <symbol>av_bitstream_filter_init</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;vtd_do_iommu_translate&apos; is never used." verbose="The function &apos;vtd_do_iommu_translate&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0103.c" line="1" column="13"/>
+            <symbol>vtd_do_iommu_translate</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;qstring_from_substr&apos; is never used." verbose="The function &apos;qstring_from_substr&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0104.c" line="1" column="10"/>
+            <symbol>qstring_from_substr</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;qmp_dispatch_check_obj&apos; is never used." verbose="The function &apos;qmp_dispatch_check_obj&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0105.c" line="1" column="15"/>
+            <symbol>qmp_dispatch_check_obj</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;int32_to_float32&apos; is never used." verbose="The function &apos;int32_to_float32&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0107.c" line="1" column="9"/>
+            <symbol>int32_to_float32</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;vnc_hextile_send_framebuffer_update&apos; is never used." verbose="The function &apos;vnc_hextile_send_framebuffer_update&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0108.c" line="1" column="5"/>
+            <symbol>vnc_hextile_send_framebuffer_update</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;arm_cpu_dump_state&apos; is never used." verbose="The function &apos;arm_cpu_dump_state&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0109.c" line="1" column="6"/>
+            <symbol>arm_cpu_dump_state</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;avc_biwgt_4x4multiple_msa&apos; is never used." verbose="The function &apos;avc_biwgt_4x4multiple_msa&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0113.c" line="1" column="13"/>
+            <symbol>avc_biwgt_4x4multiple_msa</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;gen_msa_branch&apos; is never used." verbose="The function &apos;gen_msa_branch&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0114.c" line="1" column="13"/>
+            <symbol>gen_msa_branch</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;av_set_string3&apos; is never used." verbose="The function &apos;av_set_string3&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0115.c" line="1" column="5"/>
+            <symbol>av_set_string3</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;thread_func&apos; is never used." verbose="The function &apos;thread_func&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0116.c" line="1" column="14"/>
+            <symbol>thread_func</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;libgsm_decode_frame&apos; is never used." verbose="The function &apos;libgsm_decode_frame&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0117.c" line="1" column="12"/>
+            <symbol>libgsm_decode_frame</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;qcow_co_readv&apos; is never used." verbose="The function &apos;qcow_co_readv&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0119.c" line="1" column="25"/>
+            <symbol>qcow_co_readv</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;vmstate_unregister&apos; is never used." verbose="The function &apos;vmstate_unregister&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0120.c" line="1" column="6"/>
+            <symbol>vmstate_unregister</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;mpc8_decode_frame&apos; is never used." verbose="The function &apos;mpc8_decode_frame&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0121.c" line="1" column="12"/>
+            <symbol>mpc8_decode_frame</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;ftp_file_size&apos; is never used." verbose="The function &apos;ftp_file_size&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0122.c" line="1" column="12"/>
+            <symbol>ftp_file_size</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;vhost_net_stop_one&apos; is never used." verbose="The function &apos;vhost_net_stop_one&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0123.c" line="1" column="13"/>
+            <symbol>vhost_net_stop_one</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;v9fs_receivefd&apos; is never used." verbose="The function &apos;v9fs_receivefd&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0124.c" line="1" column="12"/>
+            <symbol>v9fs_receivefd</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;sha1_transform&apos; is never used." verbose="The function &apos;sha1_transform&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0125.c" line="1" column="13"/>
+            <symbol>sha1_transform</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;do_strtosz&apos; is never used." verbose="The function &apos;do_strtosz&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0126.c" line="1" column="16"/>
+            <symbol>do_strtosz</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;ich9_pm_init&apos; is never used." verbose="The function &apos;ich9_pm_init&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0128.c" line="1" column="6"/>
+            <symbol>ich9_pm_init</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;vfio_enable_intx&apos; is never used." verbose="The function &apos;vfio_enable_intx&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0129.c" line="1" column="12"/>
+            <symbol>vfio_enable_intx</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;kvmppc_get_books_sregs&apos; is never used." verbose="The function &apos;kvmppc_get_books_sregs&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0130.c" line="1" column="12"/>
+            <symbol>kvmppc_get_books_sregs</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;pal_init&apos; is never used." verbose="The function &apos;pal_init&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0131.c" line="1" column="6"/>
+            <symbol>pal_init</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;sdhci_write_block_to_card&apos; is never used." verbose="The function &apos;sdhci_write_block_to_card&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0132.c" line="1" column="13"/>
+            <symbol>sdhci_write_block_to_card</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;alac_encode_frame&apos; is never used." verbose="The function &apos;alac_encode_frame&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0133.c" line="1" column="12"/>
+            <symbol>alac_encode_frame</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;ljpeg_encode_frame&apos; is never used." verbose="The function &apos;ljpeg_encode_frame&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0134.c" line="1" column="12"/>
+            <symbol>ljpeg_encode_frame</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;h261_find_frame_end&apos; is never used." verbose="The function &apos;h261_find_frame_end&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0135.c" line="1" column="12"/>
+            <symbol>h261_find_frame_end</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;get_packetheader&apos; is never used." verbose="The function &apos;get_packetheader&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0136.c" line="1" column="12"/>
+            <symbol>get_packetheader</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;cow_probe&apos; is never used." verbose="The function &apos;cow_probe&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0140.c" line="1" column="12"/>
+            <symbol>cow_probe</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;is_allocated_base&apos; is never used." verbose="The function &apos;is_allocated_base&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0141.c" line="1" column="25"/>
+            <symbol>is_allocated_base</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;decouple_info&apos; is never used." verbose="The function &apos;decouple_info&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0142.c" line="1" column="13"/>
+            <symbol>decouple_info</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;xtensa_kc705_init&apos; is never used." verbose="The function &apos;xtensa_kc705_init&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0143.c" line="1" column="13"/>
+            <symbol>xtensa_kc705_init</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;vmsvga_cursor_define&apos; is never used." verbose="The function &apos;vmsvga_cursor_define&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0144.c" line="1" column="20"/>
+            <symbol>vmsvga_cursor_define</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;test_hba_enable&apos; is never used." verbose="The function &apos;test_hba_enable&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0146.c" line="1" column="13"/>
+            <symbol>test_hba_enable</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;do_token_in&apos; is never used." verbose="The function &apos;do_token_in&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0148.c" line="1" column="13"/>
+            <symbol>do_token_in</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;mv88w8618_flashcfg_write&apos; is never used." verbose="The function &apos;mv88w8618_flashcfg_write&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0149.c" line="1" column="13"/>
+            <symbol>mv88w8618_flashcfg_write</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;tcg_out_goto_label&apos; is never used." verbose="The function &apos;tcg_out_goto_label&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0150.c" line="1" column="20"/>
+            <symbol>tcg_out_goto_label</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;DMA_run&apos; is never used." verbose="The function &apos;DMA_run&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0151.c" line="1" column="6"/>
+            <symbol>DMA_run</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;qemu_fopen_fd&apos; is never used." verbose="The function &apos;qemu_fopen_fd&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0152.c" line="1" column="11"/>
+            <symbol>qemu_fopen_fd</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;memory_access_is_direct&apos; is never used." verbose="The function &apos;memory_access_is_direct&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0153.c" line="1" column="20"/>
+            <symbol>memory_access_is_direct</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;filter_samples&apos; is never used." verbose="The function &apos;filter_samples&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0154.c" line="1" column="12"/>
+            <symbol>filter_samples</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;open_by_handle&apos; is never used." verbose="The function &apos;open_by_handle&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0155.c" line="1" column="19"/>
+            <symbol>open_by_handle</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;cook_parse&apos; is never used." verbose="The function &apos;cook_parse&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0156.c" line="1" column="12"/>
+            <symbol>cook_parse</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;mdct_test&apos; is never used." verbose="The function &apos;mdct_test&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0158.c" line="1" column="13"/>
+            <symbol>mdct_test</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;ftp_connect_control_connection&apos; is never used." verbose="The function &apos;ftp_connect_control_connection&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0159.c" line="1" column="12"/>
+            <symbol>ftp_connect_control_connection</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;ff_mpeg1_find_frame_end&apos; is never used." verbose="The function &apos;ff_mpeg1_find_frame_end&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0160.c" line="1" column="5"/>
+            <symbol>ff_mpeg1_find_frame_end</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;rdt_free_extradata&apos; is never used." verbose="The function &apos;rdt_free_extradata&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0162.c" line="1" column="1"/>
+            <symbol>rdt_free_extradata</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;zero_bss&apos; is never used." verbose="The function &apos;zero_bss&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0163.c" line="1" column="13"/>
+            <symbol>zero_bss</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;helper_iret_protected&apos; is never used." verbose="The function &apos;helper_iret_protected&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0164.c" line="1" column="6"/>
+            <symbol>helper_iret_protected</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;send_control_msg&apos; is never used." verbose="The function &apos;send_control_msg&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0165.c" line="1" column="15"/>
+            <symbol>send_control_msg</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;ldq_phys_internal&apos; is never used." verbose="The function &apos;ldq_phys_internal&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0166.c" line="1" column="24"/>
+            <symbol>ldq_phys_internal</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;pci_bridge_region_init&apos; is never used." verbose="The function &apos;pci_bridge_region_init&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0167.c" line="1" column="26"/>
+            <symbol>pci_bridge_region_init</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;dxva2_get_buffer&apos; is never used." verbose="The function &apos;dxva2_get_buffer&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0168.c" line="1" column="12"/>
+            <symbol>dxva2_get_buffer</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;audio_run_capture&apos; is never used." verbose="The function &apos;audio_run_capture&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0169.c" line="1" column="13"/>
+            <symbol>audio_run_capture</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;apic_update_irq&apos; is never used." verbose="The function &apos;apic_update_irq&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0170.c" line="1" column="13"/>
+            <symbol>apic_update_irq</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;ff_mpeg4_decode_picture_header&apos; is never used." verbose="The function &apos;ff_mpeg4_decode_picture_header&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0171.c" line="1" column="5"/>
+            <symbol>ff_mpeg4_decode_picture_header</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;check_throttle_config&apos; is never used." verbose="The function &apos;check_throttle_config&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0172.c" line="1" column="13"/>
+            <symbol>check_throttle_config</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;sd_snapshot_create&apos; is never used." verbose="The function &apos;sd_snapshot_create&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0173.c" line="1" column="12"/>
+            <symbol>sd_snapshot_create</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;address_space_write&apos; is never used." verbose="The function &apos;address_space_write&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0174.c" line="1" column="6"/>
+            <symbol>address_space_write</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;output_packet&apos; is never used." verbose="The function &apos;output_packet&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0175.c" line="1" column="12"/>
+            <symbol>output_packet</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;tlb_fill&apos; is never used." verbose="The function &apos;tlb_fill&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0176.c" line="1" column="6"/>
+            <symbol>tlb_fill</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;xen_platform_initfn&apos; is never used." verbose="The function &apos;xen_platform_initfn&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0177.c" line="1" column="12"/>
+            <symbol>xen_platform_initfn</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;do_data_decompress&apos; is never used." verbose="The function &apos;do_data_decompress&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0178.c" line="1" column="14"/>
+            <symbol>do_data_decompress</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;encode_close&apos; is never used." verbose="The function &apos;encode_close&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0179.c" line="1" column="20"/>
+            <symbol>encode_close</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;raw_co_discard&apos; is never used." verbose="The function &apos;raw_co_discard&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0180.c" line="1" column="25"/>
+            <symbol>raw_co_discard</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;virtio_net_pci_realize&apos; is never used." verbose="The function &apos;virtio_net_pci_realize&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0181.c" line="1" column="13"/>
+            <symbol>virtio_net_pci_realize</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;find_block_job&apos; is never used." verbose="The function &apos;find_block_job&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0183.c" line="1" column="18"/>
+            <symbol>find_block_job</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;s390_pci_find_dev_by_target&apos; is never used." verbose="The function &apos;s390_pci_find_dev_by_target&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0184.c" line="1" column="26"/>
+            <symbol>s390_pci_find_dev_by_target</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;s390_virtio_irq&apos; is never used." verbose="The function &apos;s390_virtio_irq&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0185.c" line="1" column="13"/>
+            <symbol>s390_virtio_irq</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;term_down_char&apos; is never used." verbose="The function &apos;term_down_char&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0187.c" line="1" column="13"/>
+            <symbol>term_down_char</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;device_try_init&apos; is never used." verbose="The function &apos;device_try_init&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0188.c" line="1" column="12"/>
+            <symbol>device_try_init</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;milkymist_memcard_init&apos; is never used." verbose="The function &apos;milkymist_memcard_init&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0189.c" line="1" column="12"/>
+            <symbol>milkymist_memcard_init</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;parse_keyword&apos; is never used." verbose="The function &apos;parse_keyword&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0190.c" line="1" column="17"/>
+            <symbol>parse_keyword</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;num_effective_busses&apos; is never used." verbose="The function &apos;num_effective_busses&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0191.c" line="1" column="19"/>
+            <symbol>num_effective_busses</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;avcodec_decode_video2&apos; is never used." verbose="The function &apos;avcodec_decode_video2&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0192.c" line="1" column="25"/>
+            <symbol>avcodec_decode_video2</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;build_feed_streams&apos; is never used." verbose="The function &apos;build_feed_streams&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0193.c" line="1" column="13"/>
+            <symbol>build_feed_streams</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;ftp_restart&apos; is never used." verbose="The function &apos;ftp_restart&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0194.c" line="1" column="12"/>
+            <symbol>ftp_restart</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;check_refblocks&apos; is never used." verbose="The function &apos;check_refblocks&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0195.c" line="1" column="12"/>
+            <symbol>check_refblocks</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;e500_pcihost_bridge_realize&apos; is never used." verbose="The function &apos;e500_pcihost_bridge_realize&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0196.c" line="1" column="13"/>
+            <symbol>e500_pcihost_bridge_realize</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;yuv2rgba64_1_c_template&apos; is never used." verbose="The function &apos;yuv2rgba64_1_c_template&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0197.c" line="1" column="1"/>
+            <symbol>yuv2rgba64_1_c_template</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;s390_virtio_device_sync&apos; is never used." verbose="The function &apos;s390_virtio_device_sync&apos; is never used." cwe="561">
+            <location file="sonar_samples/func_0198.c" line="1" column="13"/>
+            <symbol>s390_virtio_device_sync</symbol>
+        </error>
+        <error id="staticFunction" severity="style" msg="The function &apos;bdrv_aio_readv&apos; should have static linkage since it is not used outside of its translation unit." verbose="The function &apos;bdrv_aio_readv&apos; should have static linkage since it is not used outside of its translation unit.">
+            <location file="sonar_samples/func_0127.c" line="1" column="19"/>
+            <symbol>bdrv_aio_readv</symbol>
+        </error>
+        <error id="checkersReport" severity="information" msg="Active checkers: There was critical errors (use --checkers-report=&lt;filename&gt; to see details)" verbose="Active checkers: There was critical errors (use --checkers-report=&lt;filename&gt; to see details)"/>
+    </errors>
+</results>
