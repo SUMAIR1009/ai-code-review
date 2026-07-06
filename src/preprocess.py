@@ -1,16 +1,19 @@
 # ============================================================
-# CodeXGLUE Preprocessing + Tokenisation Pipeline
+# CodeXGLUE Preprocessing + Tokenisation Pipeline (v2)
 # COM748 MSc Project - Muhammad Sumair (20098428)
-# Performs: UTF-8 normalisation, malformed-record removal,
-# exact-duplicate removal, cross-split leakage check,
-# CodeBERT tokenisation (max_length=512, truncation),
-# and an 80/10/10 split with random_state=42.
+#
+# CANONICAL-SPLIT-PRESERVING version.
+# Keeps Devign's original train/valid/test partitions intact
+# (for comparability with published results and to protect the
+# held-out test set), and removes only cross-split leakage:
+# any training function that also appears in validation or test
+# is dropped from TRAIN, leaving valid/test untouched.
+# Then tokenises with CodeBERT (max_length=512, truncation).
 # ============================================================
 
 import json
 import os
 import pandas as pd
-from sklearn.model_selection import train_test_split
 from transformers import AutoTokenizer
 
 # ---- Configuration ----
@@ -18,11 +21,10 @@ DATA_DIR = "data/raw/codexglue"      # adjust if your folder differs
 OUT_DIR  = "data/processed"
 TOKENIZER_NAME = "microsoft/codebert-base"
 MAX_LEN = 512
-SEED = 42
 
 os.makedirs(OUT_DIR, exist_ok=True)
 
-# ---- 1. Load the three splits ----
+# ---- Load the three canonical splits ----
 def load_jsonl(path):
     rows = []
     with open(path, "r", encoding="utf-8", errors="replace") as f:
@@ -32,47 +34,53 @@ def load_jsonl(path):
                 rows.append(json.loads(line))
     return pd.DataFrame(rows)
 
-print("Loading data...")
+print("Loading canonical splits...")
 train = load_jsonl(os.path.join(DATA_DIR, "train.jsonl"))
 valid = load_jsonl(os.path.join(DATA_DIR, "valid.jsonl"))
 test  = load_jsonl(os.path.join(DATA_DIR, "test.jsonl"))
+print(f"  Raw: {len(train):,} train / {len(valid):,} valid / {len(test):,} test")
 
-train["split"] = "train"
-valid["split"] = "valid"
-test["split"]  = "test"
-full = pd.concat([train, valid, test], ignore_index=True)
-print(f"  Loaded: {len(train):,} train / {len(valid):,} valid / {len(test):,} test  (total {len(full):,})")
+# ---- Normalise & drop malformed/empty records ----
+for name, df in [("train", train), ("valid", valid), ("test", test)]:
+    df["func"] = df["func"].astype(str)
 
-# ---- 2. Normalise & remove malformed/empty records ----
-before = len(full)
-full["func"] = full["func"].astype(str)
-full = full[full["func"].str.strip().str.len() > 0]          # drop empty
-full = full[full["target"].isin([0, 1])]                      # valid labels only
-print(f"Removed {before - len(full):,} malformed/empty records.")
+def clean(df):
+    before = len(df)
+    df = df[df["func"].str.strip().str.len() > 0]
+    df = df[df["target"].isin([0, 1])]
+    return df.reset_index(drop=True), before - len(df)
 
-# ---- 3. Exact-duplicate removal ----
-before = len(full)
-dups = full["func"].duplicated().sum()
-full = full.drop_duplicates(subset="func", keep="first").reset_index(drop=True)
-print(f"Removed {dups:,} exact-duplicate functions ({before - len(full):,} rows dropped).")
+train, dt = clean(train)
+valid, dv = clean(valid)
+test,  dte = clean(test)
+print(f"Removed malformed/empty: {dt} train, {dv} valid, {dte} test")
 
-# ---- 4. Cross-split leakage report (informational) ----
-# Count functions that appeared in more than one original split before dedup
-leak = (pd.concat([train, valid, test])
-        .groupby("func")["split"].nunique())
-cross_split = (leak > 1).sum()
-print(f"Cross-split duplicate functions detected (pre-dedup): {cross_split:,}")
-print("  (deduplication above removes these, preventing train/test leakage.)")
+# ---- Within-split exact-duplicate removal (keep first) ----
+def dedup_within(df):
+    before = len(df)
+    df = df.drop_duplicates(subset="func", keep="first").reset_index(drop=True)
+    return df, before - len(df)
 
-# ---- 5. Re-split 80/10/10 with seed 42 (stratified on label) ----
-train_df, temp_df = train_test_split(
-    full, test_size=0.20, random_state=SEED, stratify=full["target"])
-valid_df, test_df = train_test_split(
-    temp_df, test_size=0.50, random_state=SEED, stratify=temp_df["target"])
-print(f"Re-split -> train {len(train_df):,} / valid {len(valid_df):,} / test {len(test_df):,}")
+train, wt = dedup_within(train)
+valid, wv = dedup_within(valid)
+test,  wte = dedup_within(test)
+print(f"Removed within-split duplicates: {wt} train, {wv} valid, {wte} test")
 
-# ---- 6. Tokenise with CodeBERT ----
-print(f"Loading tokenizer: {TOKENIZER_NAME} ...")
+# ---- Cross-split leakage removal ----
+# Protect valid/test: remove from TRAIN any function that also
+# appears in validation or test. Valid/test remain untouched.
+eval_funcs = set(valid["func"]) | set(test["func"])
+before = len(train)
+train = train[~train["func"].isin(eval_funcs)].reset_index(drop=True)
+cross_removed = before - len(train)
+print(f"Removed {cross_removed} cross-split leakage functions from TRAIN "
+      f"(valid/test left intact).")
+
+print(f"\nFinal canonical splits:")
+print(f"  train {len(train):,} / valid {len(valid):,} / test {len(test):,}")
+
+# ---- Tokenise with CodeBERT ----
+print(f"\nLoading tokenizer: {TOKENIZER_NAME} ...")
 tokenizer = AutoTokenizer.from_pretrained(TOKENIZER_NAME)
 
 def tokenise(df):
@@ -82,8 +90,8 @@ def tokenise(df):
         truncation=True,
         padding="max_length",
     )
-    out = []
     targets = df["target"].tolist()
+    out = []
     for i in range(len(df)):
         out.append({
             "input_ids": enc["input_ids"][i],
@@ -92,8 +100,8 @@ def tokenise(df):
         })
     return out
 
-print("Tokenising (this may take a few minutes)...")
-splits = {"train": train_df, "validation": valid_df, "test": test_df}
+print("Tokenising (a few minutes)...")
+splits = {"train": train, "validation": valid, "test": test}
 for name, df in splits.items():
     toks = tokenise(df)
     out_path = os.path.join(OUT_DIR, f"{name}_tokenised.json")
@@ -101,10 +109,13 @@ for name, df in splits.items():
         json.dump(toks, f)
     print(f"  Saved {name}: {len(toks):,} samples -> {out_path}")
 
-# ---- 7. Final report ----
-trunc = (full["func"].apply(lambda s: len(tokenizer.encode(s)) > MAX_LEN)).mean() * 100
+# ---- Truncation report (real BPE token counts) ----
+all_funcs = pd.concat([train, valid, test])["func"]
+trunc = all_funcs.apply(lambda s: len(tokenizer.encode(s)) > MAX_LEN).mean() * 100
+
 print("\n--- PREPROCESSING COMPLETE ---")
-print(f"  Final dataset size: {len(full):,}")
-print(f"  Splits: {len(train_df):,} / {len(valid_df):,} / {len(test_df):,} (80/10/10, seed 42)")
+print(f"  Canonical splits preserved (Devign train/valid/test).")
+print(f"  train {len(train):,} / valid {len(valid):,} / test {len(test):,}")
+print(f"  Cross-split leakage removed from train: {cross_removed}")
 print(f"  Functions exceeding {MAX_LEN} tokens (truncated): {trunc:.1f}%")
 print(f"  Output written to: {OUT_DIR}/")
