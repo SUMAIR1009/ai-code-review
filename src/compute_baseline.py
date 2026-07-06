@@ -5,6 +5,14 @@
 # Reads Cppcheck XML output + CodeXGLUE ground-truth labels,
 # applies the mapping rule (Rule A: error OR warning => buggy),
 # and computes the static-analysis baseline metrics.
+#
+# The Cppcheck results file parsed by this script was produced
+# with Cppcheck 2.21.0 using the following invocation:
+#
+#   cppcheck --enable=all --xml --output-file=cppcheck_results.xml sonar_samples
+#
+# Sample generation: src/make_sonar_samples.py (200 functions,
+# 100 buggy / 100 clean, drawn with random seed 42).
 # ============================================================
 
 import xml.etree.ElementTree as ET
